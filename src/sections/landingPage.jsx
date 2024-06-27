@@ -1,11 +1,10 @@
 "use client";
 import Image from "next/image";
 import styles from "./sections.module.css";
-import { Montserrat } from "next/font/google";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-
-const montserrat = Montserrat({
+import { Montserrat } from "next/font/google";
+const montserratFont = Montserrat({
   subsets: ["latin"],
   weight: ["900"],
 });
@@ -67,7 +66,7 @@ const LandingPage = () => {
             Grow and expand your business with
           </p>
           <h1
-            className={`${styles.heroHeader} ${montserrat.className}`}
+            className={`${styles.heroHeader} ${montserratFont.className}`}
             ref={heroTextRef}
           >
             <span className={styles.heroSpan}>KOMOSU</span> NETWORK
