@@ -11,7 +11,7 @@ const Testimonials = () => {
     <div className={styles.tesimonialContainer}>
     <div className={styles.tesimonialContents}>
       <div className={styles.avatar}>
-        <Image src="/Subtract (1).png" fill/>
+        <Image src="/Subtract (1).png" alt="testimonialsImg" fill/>
       </div>
       <div className={styles.testimonialTextContent}>
         <h2 className={styles.clientCompany}>Jeep</h2>
@@ -21,15 +21,15 @@ const Testimonials = () => {
       </div>
     </div>
     <div className={styles.groupImg}>
-      <Image src="/triangle.png" fill/>
+      <Image src="/triangle.png" alt="testimonialsImg" fill/>
     </div>
     </div>
     <div className={styles.testimonialbuttonDirection}>
       <div className={styles.btnprev}>
-        <Image src="/View plan button.png" fill/>
+        <Image src="/View plan button.png" alt="testimonialsImg" fill/>
       </div>
       <div className={styles.btnNext}>    
-       <Image src="/View plan button (1).png" fill/></div>
+       <Image src="/View plan button (1).png" alt="testimonialsImg" fill/></div>
     </div>
   </section>;
 };

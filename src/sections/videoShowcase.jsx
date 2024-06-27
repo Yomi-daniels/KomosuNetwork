@@ -33,17 +33,16 @@ const VideoShowcase = () => {
           {!isPlaying ? (
             <div className={styles.playContainer}>
               <button onClick={handlePlay} className={styles.playButton}>
-                <Image src="/play-large-fill.svg" fill />
+                <Image src="/play-large-fill.svg" alt="Play" fill />
               </button>
             </div>
           ) : (
             <div className={styles.resetContainer}>
               <button onClick={handleReset} className={styles.resetButton}>
-                <Image src="/pause-large-fill.svg" fill />
+                <Image src="/pause-large-fill.svg" alt="Pause" fill />
               </button>
             </div>
           )}
-          ``
         </div>
       </div>
       <p className={styles.videoContent}>

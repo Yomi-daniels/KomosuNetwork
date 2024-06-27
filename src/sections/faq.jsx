@@ -18,19 +18,19 @@ const FAQ = () => {
       <div className={styles.FAQContents}>
         <h4>What Service Does Komosu Offer?</h4>
         <div className={styles.dropdownImg}>
-          <Image src="/Frame 39.png" fill/>
+          <Image src="/Frame 39.png" alt="Faq image" fill/>
         </div>
       </div>
       <div className={styles.FAQContents}>
         <h4>What Service Does Komosu Offer?</h4>
         <div className={styles.dropdownImg}>
-          <Image src="/Frame 39.png" fill/>
+          <Image src="/Frame 39.png" alt="Faq image" fill/>
         </div>
       </div>
       <div className={styles.FAQContents}>
         <h4>What Service Does Komosu Offer?</h4>
         <div className={styles.dropdownImg}>
-          <Image src="/Frame 39.png" fill/>
+          <Image src="/Frame 39.png" alt="Faq image" fill/>
         </div>
       </div>
     </div>
