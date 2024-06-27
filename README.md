@@ -34,3 +34,29 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+{
+"name": "komosu-net",
+"version": "0.1.0",
+"private": true,
+"scripts": {
+"dev": "next dev",
+"build": "next build",
+"start": "next start",
+"lint": "next lint"
+},
+"dependencies": {
+"gsap": "^3.12.5",
+"next": "14.2.4",
+"react": "^18",
+"react-dom": "^18"
+},
+"devDependencies": {
+"eslint": "^8.57.0",
+"eslint-config-next": "14.2.4",
+"eslint-config-prettier": "^9.1.0",
+"eslint-plugin-prettier": "^5.1.3",
+"eslint-plugin-react": "^7.34.3",
+"prettier": "^3.3.2"
+}
+}
