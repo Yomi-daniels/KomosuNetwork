@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: satoshi light;
   src: url(/public/fonts/Satoshi-Light.otf);
 }
@@ -21,7 +21,7 @@
 @font-face {
   font-family: satoshi shadows into light;
   src: url(./components/navbar/fonts/ShadowsIntoLight.ttf);
-}
+} */
 :root {
   --navbar-bg: #131313;
   --textFontLight: satoshi light;
@@ -57,8 +57,6 @@
 }
 body {
   background-color: var(--bg);
-
-  font-family: var(--textFontLight);
 }
 a {
   color: inherit;

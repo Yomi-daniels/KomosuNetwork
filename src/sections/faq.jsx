@@ -15,11 +15,8 @@ const FAQ = () => {
   <h2> Got <span className={`${styles.servicesSpan} ${shadow_Font.className}`}>Questions?</span> we have the answers right<span className={`${styles.servicesSpan} ${shadow_Font.className}`}> Here</span></h2>
   </div>
     <div className={styles.FAQContainer}>
-      <div className={styles.FAQContents}>
-        <h4>What Service Does Komosu Offer?</h4>
-        <div className={styles.dropdownImg}>
-          <Image src="/Frame 39.png" alt="Faq image" fill/>
-        </div>
+      <div className={styles.FAQline}>
+        <Image src="/Group 2.png" alt="lines" fill/>
       </div>
       <div className={styles.FAQContents}>
         <h4>What Service Does Komosu Offer?</h4>
@@ -32,6 +29,15 @@ const FAQ = () => {
         <div className={styles.dropdownImg}>
           <Image src="/Frame 39.png" alt="Faq image" fill/>
         </div>
+      </div>
+      <div className={styles.FAQContents}>
+        <h4>What Service Does Komosu Offer?</h4>
+        <div className={styles.dropdownImg}>
+          <Image src="/Frame 39.png" alt="Faq image" fill/>
+        </div>
+      </div>
+      <div className={styles.FAQline}>
+        <Image src="/Group 3.png" alt="lines" fill/>
       </div>
     </div>
   </section>;

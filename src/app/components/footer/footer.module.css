@@ -1,0 +1,107 @@
+.FooterSection {
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.FooterContainer {
+  max-width: 1300px;
+  height: 603px;
+  margin-inline: auto;
+  background-color: var(--blueText);
+  border-radius: 36px;
+  padding: 3rem 2.8rem;
+  position: relative;
+  color: white;
+  font-size: 18px;
+}
+
+.footerContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  max-width: 100%;
+  /* gap: 3em; */
+}
+
+.footerHeader {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footerHeader h1 {
+  font-size: 2.9rem;
+  width: 716px;
+  line-height: 1.4;
+}
+
+.buttonImage {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.footerBtn {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.footerBtn button {
+  width: 200px;
+  height: 50px;
+  border-radius: 36px;
+  background-color: var(--btn);
+  font-weight: 500;
+  border: none;
+  color: #fff;
+  font-size: 1.13rem;
+}
+
+.footerBtn .footerbtn2 {
+  display: flex;
+  background-color: #e6e6ff;
+  align-items: center;
+  width: 230px;
+  justify-content: space-between;
+  color: var(--blueText);
+  font-weight: 700;
+  /* gap: 1em; */
+  padding: 1.12rem;
+}
+
+.buttonImageBg {
+  background-color: var(--btn);
+  border-radius: 100px;
+  padding: 0.5rem;
+}
+
+.footerLinks,
+.TermsCondition,
+.FooterSocialLink {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2em;
+  font-weight: 500;
+}
+
+.footerLink {
+  display: flex;
+  flex-direction: column;
+}
+
+.FooterContentContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SocialLink {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.FooterSocialLink p {
+  width: 80%;
+}

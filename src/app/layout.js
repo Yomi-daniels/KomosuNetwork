@@ -14,7 +14,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/favicon.png" type="image/png" />
+    <head>
+    <link rel="icon" href="/favicon.png" type="image/png" />
       <link
         rel="icon"
         type="image/png"
@@ -27,6 +28,15 @@ export default function RootLayout({ children }) {
         sizes="16x16"
         href="/favicon-16x16.png"
       />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossOrigin="anonymous"
+        referrerPolicy="no-referrer"
+      />
+    </head>
+  
 
       <body className={montserrat.className}>
         <div className="container">
