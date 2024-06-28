@@ -24,7 +24,7 @@ const OfferAnimation = () => {
             <div className={styles.OfferAnimationContainerContentSmallImage}>
               <Image src="/Vector (5).png" alt="offerAnimImg" fill />
             </div>
-            <h6>PROMOTIONAL VIDEOS</h6>
+            <h6 className={styles.offerH6}>PROMOTIONAL VIDEOS</h6>
           </div>
           <h3>
             Capture attention with high-quality visuals and engaging content

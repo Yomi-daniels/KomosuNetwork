@@ -57,6 +57,7 @@
 }
 body {
   background-color: var(--bg);
+  overflow-x: hidden;
 }
 a {
   color: inherit;

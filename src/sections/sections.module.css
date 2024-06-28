@@ -589,22 +589,34 @@
   background-color: var(--blueText);
   color: var(--text);
   border-radius: 48px;
-  width: 635px;
+  width: 655px;
   padding: 1rem 1.2rem;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2em;
   margin-top: 2rem;
+  box-sizing: border-box;
 }
 
 .offerSelectProps li {
   cursor: pointer;
   font-size: 0.9rem;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    transform 0.3s;
+  padding: 1rem; /* Ensure padding is applied to maintain consistent size */
+  border-radius: 36px;
+  box-sizing: border-box;
 }
+
 .offerSelectProps li:hover {
-  color: var(--yellow);
+  background-color: #fff;
+  color: var(--blueText);
+  transform: scale(1.05); /* Slightly scale the item to give a hover effect */
 }
-.offerSelectProps li:first-of-type {
+
+.offerSelectProps .active {
   background-color: #fff;
   color: var(--blueText);
   padding: 1rem;
@@ -612,6 +624,7 @@
 }
 
 .webDesignContainer {
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -621,12 +634,20 @@
   position: relative;
 }
 
+.aiSolution,
+.leadGeneration {
+  flex-direction: row-reverse;
+}
+
+.webDesignContent {
+  max-width: 50%;
+}
+
 .webDesignCard {
-  background-color: var(--yellow);
   width: 658px;
   height: 570px;
   border-radius: 20px;
-  border: 1px solid #534500;
+  position: relative;
 }
 
 .webDesignHeader {
@@ -641,13 +662,61 @@
 }
 
 .webHeaderImgBg {
-  background-color: #fcf6d9;
+  background-color: var(--hover1);
   padding: 0.4rem;
+  border-radius: 6px;
 }
+
 .webHeaderImg {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.WebDesignBtn {
+  display: flex;
+  gap: 1em;
+  margin-top: 2rem;
+}
+
+.WebDesignBtn button {
+  width: 200px;
+  height: 50px;
+  border-radius: 36px;
+  font-weight: 500;
+  border: none;
+  color: #fff;
+  font-size: 1.13rem;
+}
+
+.WebDesignBtn .WebDesignBtn1 {
+  background-color: #e6e6ff;
+  color: var(--blueText);
+  font-weight: 700;
+}
+
+.WebDesignBtn .WebDesignBtn2 {
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 0.5rem;
+  color: var(--btn);
+  border: 2px solid var(--btn);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 700;
+}
+
+.WebBtnImg {
   position: relative;
   width: 20px;
   height: 20px;
+}
+
+.RoundBgCOlor {
+  background-color: var(--btn);
+  border-radius: 100px;
+  padding: 0.5rem;
 }
 
 .webDesignh1 {
@@ -657,7 +726,7 @@
 }
 
 .webFeaturesImgShadow {
-  background-color: #6a5900;
+  background-color: var(--blueText);
   border-radius: 50px;
   padding-right: 0.1rem;
 }
@@ -799,10 +868,6 @@
   transition: 0.3s ease;
 }
 
-.OfferAnimationContainerContentHeader h6 {
-  font-size: 1.1rem;
-}
-
 .OfferAnimationContainerContent:first-child {
   position: absolute;
   bottom: -40%;
@@ -865,6 +930,16 @@
   color: var(--blueText);
   line-height: 1.6;
   font-size: 2rem;
+}
+
+.OfferAnimationContainerContentHeader .offerH6 {
+  font-size: 1.1rem;
+  color: var(--blueText);
+}
+
+.businessAnalytics {
+  font-size: 1.1rem;
+  color: #534500;
 }
 
 .offerFeaturesContent {
