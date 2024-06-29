@@ -6,15 +6,18 @@ import Services from "@/sections/services";
 import Testimonials from "@/sections/testimonials";
 import VideoShowcase from "@/sections/videoShowcase";
 import styles from "./page.module.css";
+import Navbar from "./components/navbar/Navbar";
 
 const Home = () => {
   return (
     <div>
+      <Navbar />
       <section className={styles.landingPage}>
         <LandingPage />
       </section>
       <section className={styles.ServicesPage}>
         <Services />
+        <section className={styles.Servisesflex}></section>
       </section>
       <section className={styles.VideoShowcasePage}>
         <VideoShowcase />

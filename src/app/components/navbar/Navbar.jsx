@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Links from "./links/Links";
-import styles from "./navbar.module.css";
+import NavBarstyles from "./navbar.module.css";
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import { Koulen } from "next/font/google";
@@ -18,10 +18,10 @@ const plus_Jakarta_Sans = Plus_Jakarta_Sans({
 
 const Navbar = () => {
   return (
-    <div className={`${styles.parent} ${plus_Jakarta_Sans.className}`}>
-      <div className={styles.container}>
-        <Link href="/" className={styles.logo}>
-          <div className={styles.logoContainer}>
+    <div className={`${NavBarstyles.parent} ${plus_Jakarta_Sans.className}`}>
+      <div className={NavBarstyles.container}>
+        <Link href="/" className={NavBarstyles.logo}>
+          <div className={NavBarstyles.logoContainer}>
             <Image src="/logo.png" alt="logo" fill />
           </div>
         </Link>
@@ -29,7 +29,9 @@ const Navbar = () => {
           <Links />
         </div>
       </div>
+      
     </div>
+    
   );
 };
 
