@@ -56,13 +56,13 @@ const OfferAnimation = () => {
           </div>
           <div className={styles.OfferAnimationImageBoxContainer}>
             <div className={styles.OfferAnimationImageBoxContent}>
-              <div className={styles.ImageBox}>
-                <Image src="/Rectangle 8.png" alt="offerAnimImg" fill />
+              <div className={styles.ImageBox1}>
+                <Image src="/Rectangle 8 (3).png" alt="offerAnimImg" fill />
               </div>
             </div>
             <div className={styles.OfferAnimationImageBoxContent}>
               <div className={styles.ImageBox2}>
-                <Image src="/Hero Image.png" alt="offerAnimImg" fill />
+                <Image src="/Group 6324.png" alt="offerAnimImg" fill />
               </div>
             </div>
           </div>
@@ -103,14 +103,18 @@ const OfferAnimation = () => {
             </div>
           </div>
           <div className={styles.OfferAnimationImageBoxContainer}>
-            <div className={styles.OfferAnimationImageBoxContent}>
-              <div className={styles.ImageBox}>
-                <Image src="/about.png" alt="offerAnimImg" fill />
+            <div
+              className={`${styles.OfferAnimationImageBoxContent} ${styles.OfferAnimationImageBoxContent2}`}
+            >
+              <div className={`${styles.ImageBox} ${styles.ImageBoxsec}`}>
+                <Image src="/Group 6322.png" alt="offerAnimImg" fill />
               </div>
             </div>
-            <div className={styles.OfferAnimationImageBoxContent}>
-              <div className={styles.ImageBox}>
-                <Image src="/Hero Image.png" alt="offerAnimImg" fill />
+            <div
+              className={`${styles.OfferAnimationImageBoxContent} ${styles.OfferAnimationImageBoxContent2}`}
+            >
+              <div className={`${styles.ImageBox} ${styles.ImageBoxsec2}`}>
+                <Image src="/Group 6323.png" alt="offerAnimImg" fill />
               </div>
             </div>
           </div>

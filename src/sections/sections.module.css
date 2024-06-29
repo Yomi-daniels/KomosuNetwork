@@ -952,7 +952,7 @@
   line-height: 1.5;
 }
 
-.ImageBox,
+.ImageBox1,
 .ImageBox2 {
   position: relative;
   width: 388px;
@@ -961,9 +961,34 @@
   background-size: 100%;
 }
 
+.ImageBox1 {
+  position: absolute;
+  left: -12%;
+}
+
 .ImageBox2 {
-  width: 295px;
-  height: 259px;
+  position: absolute;
+  margin-top: 2rem;
+  width: 225px;
+  height: 210px;
+}
+
+.ImageBoxsec {
+  width: 205px;
+  height: 205px;
+  position: absolute;
+  left: 15%;
+  z-index: 100;
+}
+
+.ImageBoxsec2 {
+  position: absolute;
+  right: -7%;
+  top: -30%;
+  width: 328px;
+  height: 336px;
+  object-fit: contain;
+  background-size: 100%;
 }
 
 .OfferAnimationImageBoxContent {
@@ -979,7 +1004,7 @@
   width: 100%;
   padding: 0;
 }
-
+/* 
 .OfferAnimationImageBoxContainer .OfferAnimationImageBoxContent:first-child {
   position: absolute;
   left: -10%;
@@ -990,7 +1015,7 @@
   position: absolute;
   right: -10%;
   margin-top: 2rem;
-}
+} */
 
 /* TESTIMONIAL SECTION */
 
