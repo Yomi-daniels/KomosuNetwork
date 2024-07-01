@@ -13,6 +13,54 @@
   display: none;
 }
 
+.linkItem {
+  position: relative;
+}
+
+.servicesContainer {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.subLinks {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0 20px 20px 20px;
+}
+
+.subLinks a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.dropdownButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  margin-top: 0.1rem;
+}
+
+.dropdownButton img {
+  width: 16px;
+  height: 16px;
+}
+
 @media (max-width: 768px) {
   .links {
     display: none;

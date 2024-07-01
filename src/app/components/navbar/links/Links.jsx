@@ -7,12 +7,26 @@ import { useState } from "react";
 const links = [
   {
     title: "About Us",
-    
     path: "/about",
   },
   {
     title: "Services",
     path: "/servicesLink",
+    subLinks: [
+      { title: "Web Design", path: "/webdesign" },
+      {
+        title: "AI Solution",
+        path: "/aisolution",
+      },
+      {
+        title: "Content Marketing",
+        path: "contentmarketing",
+      },
+      {
+        title: "Lead Generation",
+        path: "leadgeneration",
+      },
+    ],
   },
   {
     title: "Pricing",
@@ -22,32 +36,99 @@ const links = [
     title: "Contact",
     path: "/contact",
   },
-
   {
     title: "Request Demo",
     path: "/request-demo",
   },
 ];
+
 const Links = () => {
   const [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+
+  const handleServiceClick = () => {
+    setServicesOpen((prev) => !prev);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.links}>
         {links.map((link) => (
-          <NavLink item={link} key={link.title} />
+          <div key={link.title} className={styles.linkItem}>
+            {link.subLinks ? (
+              <>
+                <div
+                  className={styles.servicesContainer}
+                  onClick={handleServiceClick}
+                >
+                  <NavLink item={link} />
+                  <button className={styles.dropdownButton}>
+                    <Image
+                      src="/arrow-drop-down-line.svg"
+                      alt="dropdown"
+                      width={20}
+                      height={20}
+                    />
+                  </button>
+                </div>
+                {servicesOpen && (
+                  <div className={styles.subLinks}>
+                    {link.subLinks.map((subLink) => (
+                      <NavLink item={subLink} key={subLink.title} />
+                    ))}
+                  </div>
+                )}
+              </>
+            ) : (
+              <NavLink item={link} />
+            )}
+          </div>
         ))}
       </div>
       <button
         onClick={() => setOpen((prev) => !prev)}
         className={styles.menuButton}
       >
-        <Image src="/menu-bar.svg" fill />
+        <Image
+          src="/arrow-drop-down-line.svg"
+          alt="menu"
+          width={24}
+          height={24}
+        />
       </button>
       {open && (
         <div className={styles.mobileContainer}>
           <div className={styles.mobileLinks}>
             {links.map((link) => (
-              <NavLink item={link} key={link.title} />
+              <div key={link.title} className={styles.linkItem}>
+                {link.title === "Services" ? (
+                  <>
+                    <div
+                      className={styles.servicesContainer}
+                      onClick={handleServiceClick}
+                    >
+                      <NavLink item={link} />
+                      <button className={styles.dropdownButton}>
+                        <Image
+                          src="/arrow-drop-down-line.svg"
+                          alt="dropdown"
+                          width={20}
+                          height={20}
+                        />
+                      </button>
+                    </div>
+                    {servicesOpen && (
+                      <div className={styles.subLinks}>
+                        {link.subLinks.map((subLink) => (
+                          <NavLink item={subLink} key={subLink.title} />
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <NavLink item={link} />
+                )}
+              </div>
             ))}
           </div>
         </div>

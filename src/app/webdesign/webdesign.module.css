@@ -1,0 +1,438 @@
+.webdesignSection {
+  margin-top: 5.6rem;
+}
+.webdesignLandingPage {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  background-color: var(--hover1);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.webdesignLandingPageContainer {
+  max-width: 1300px;
+  height: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.headerContent {
+  color: var(--blueText);
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.webdesignTextContainer h1 {
+  margin: 1rem 0;
+  color: var(--blueText);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  /* width: 40%; */
+  line-height: 120%; /* 57.6px */
+  letter-spacing: -0.48px;
+}
+
+.headerimg {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.butttonBlue {
+  background-color: var(--btn);
+  padding: 0.5rem;
+  border-radius: 50px;
+}
+
+.buttonImg {
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  margin-top: 2rem;
+}
+
+.buttonContainer button {
+  display: flex;
+  width: 184px;
+  height: 55px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 36px;
+  background: var(--btn);
+  border: none;
+  color: #ffff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.buttonContainer button:last-child {
+  background-color: #fff;
+  border: 1px solid var(--btn);
+  color: var(--btn);
+  justify-content: space-around;
+}
+
+.webdesignImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.webimage {
+  position: relative;
+  width: 282px;
+  height: 80px;
+  object-fit: cover;
+  margin-left: 3rem;
+}
+
+.webimage2 {
+  position: relative;
+  width: 649px;
+  height: 365.102px;
+}
+
+.vectorImagetop {
+  right: 40%;
+  top: 10%;
+  width: 124px;
+  height: 124px;
+  position: absolute;
+}
+
+.vectorImagebottom {
+  width: 124px;
+  height: 124px;
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+/* WEB DESIGN SECTION */
+
+.webWorksSection {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 1rem;
+}
+
+.webWorksContainer {
+  max-width: 1300px;
+  height: 100%;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
+.webWorksSection .WebHeader {
+  text-align: center;
+  font-size: 40px;
+  color: var(--blueText);
+}
+
+.headerSpan {
+  color: var(--yellow);
+}
+.webWorksShowcase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.webworkDesign1 {
+  position: relative;
+  width: 647px;
+  height: 366px;
+}
+
+.webworkDesign2 {
+  width: 633px;
+  height: 366px;
+  position: relative;
+}
+
+.webWorksShowcase2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  margin-top: 1rem;
+}
+
+.webworkDesign3,
+.webworkDesign4,
+.webworkDesign5 {
+  position: relative;
+  width: 565px;
+  height: 400px;
+}
+
+.webdesignContentsContainer {
+  max-width: 1300px;
+  min-height: 100vh;
+  margin-inline: auto;
+  margin-top: 5rem;
+}
+
+.webdesignTextContent,
+.webdesignTextContent2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.webdesignTextContent button,
+.webdesignTextContent2 button {
+  width: 160px;
+  height: 55px;
+  padding: 8px 12px;
+  justify-content: center;
+  border-radius: 36px;
+  border: 1px solid var(--btn);
+  color: var(--btn);
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.webdesignContents1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.webdesignTextContent h2,
+.webdesignTextContent2 h2 {
+  font-size: 40px;
+  color: var(--blueText);
+}
+
+.webdesignImg {
+  position: relative;
+  width: 562px;
+  height: 400px;
+}
+
+.webdesignContent2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.webdesignTextContent2 {
+  width: 50%;
+}
+
+/* WEB DESIGN PRICING SECTION */
+
+.WebPricingSection {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.WebPricingSectionHeader {
+  color: var(--blueText);
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.WebPricingSectionHeader p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+}
+
+.WebPricingContainer {
+  max-width: 1300px;
+  height: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.webpricingSpan {
+  color: var(--btn);
+}
+
+.AnnualPricingContainer {
+  text-align: center;
+  margin-top: 4rem;
+  display: flex;
+  padding: 1rem 1rem;
+  justify-content: center;
+  width: fit-content;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 48px;
+  background-color: var(--blueText);
+  color: #fff;
+  gap: 1.5em;
+}
+
+.annualspan {
+  color: var(--yellow);
+}
+
+.monthlybg {
+  background-color: #fff;
+  color: var(--blueText);
+  padding: 1rem 1.5rem;
+  border-radius: 48px;
+}
+
+.tickImg {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.tickImgBg {
+  background-color: var(--blueText);
+  border-radius: 50px;
+  padding-right: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+.webPricingContents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  margin-top: 3rem;
+}
+
+.webBasicPlan {
+  width: 424px;
+  padding: 40px 20px;
+  border-radius: 20px;
+  border: 1px solid var(--blueText);
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.webBasicPlan h4 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.48px;
+  text-transform: capitalize;
+  color: var(--blueText);
+}
+
+.webBasicPlan p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.18px;
+  color: var(--blueText);
+}
+
+.webBasicPlan h3 {
+  color: var(--btn);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+  letter-spacing: -0.4px;
+}
+
+.webBasicPlan h3 span {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.36px;
+}
+
+.webBasicPlan .lineThrough {
+  color: #818185;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.48px;
+  text-decoration: line-through;
+  text-transform: capitalize;
+}
+
+.webBasicPlan button {
+  height: 60px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--btn);
+  background: #fff;
+  color: var(--btn);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.webbasicplanfeatures {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.webbasicplanfeaturesContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5em;
+}
+
+.webbasicplanfeaturesContent p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+}
+
+.webPremiumPlan {
+  background-color: var(--btn);
+  color: #fff;
+  position: relative;
+}
+
+.webPremiumPlan h4 {
+  color: inherit;
+}
+
+.webPremiumPlan p {
+  color: inherit;
+}
+
+.webPremiumPlan h3 {
+  color: #fff;
+}
+
+.webPremiumPlan .lineThrough {
+  color: #fff;
+}
