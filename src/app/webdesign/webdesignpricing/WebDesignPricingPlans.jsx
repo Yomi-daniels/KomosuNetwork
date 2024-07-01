@@ -1,5 +1,6 @@
 import webstyle from "../webdesign.module.css";
 import { Shadows_Into_Light } from "next/font/google";
+import AnnualLink from "../components/AnnualLink";
 import Image from "next/image";
 
 const shadowsFont = Shadows_Into_Light ({
@@ -14,12 +15,7 @@ const WebDesignPricingPlans = () => {
           <p>Choose a Komosu Plan that suits your business needs and goals</p>
       </div>
       <div className={webstyle.WebPricingContainer}>
-        <div className={webstyle.AnnualPricingContainer}>
-            <p className={webstyle.annualtextcontent}>
-            Annual Pricing <span className={webstyle.annualspan}>(20% Off)</span>
-            </p>
-            <p className={webstyle.monthlybg}> Monthly</p>
-        </div>
+            <AnnualLink/>
         <div className={webstyle.webPricingContents}>
             <div className={webstyle.webBasicPlan}>
                 <h4>BASIC PLAN</h4>

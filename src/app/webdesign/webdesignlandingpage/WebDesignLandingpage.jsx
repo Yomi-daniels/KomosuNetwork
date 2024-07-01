@@ -1,5 +1,6 @@
 import webstyle from "../webdesign.module.css";
 import Image from "next/image";
+import LandingPageButtons from "../components/LandingPageButtons";
 const WebDesignLandingpage = () => {
   return (
     <section className={webstyle.webdesignLandingPage}>
@@ -15,17 +16,7 @@ const WebDesignLandingpage = () => {
                 <h4>WEB DESIGN</h4>
             </div>
             <h1>Drive your automotive company forward with innovative and stunning web design</h1>
-            <div className={webstyle.buttonContainer}>
-                <button>See Pricing</button>
-                <button>
-                Get Demo
-                    <div className={webstyle.butttonBlue}>
-                        <div className={webstyle.buttonImg}>
-                            <Image src="/Vector.png" fill/>
-                        </div>
-                    </div>
-                </button>
-            </div>
+                <LandingPageButtons/>
         </div>
         <div className={webstyle.webdesignImageContainer}>
             <div className={webstyle.webimage}>

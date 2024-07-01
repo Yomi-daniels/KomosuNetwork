@@ -245,6 +245,7 @@
 .WebPricingSection {
   width: 100%;
   min-height: 100vh;
+  margin-top: 3rem;
 }
 
 .WebPricingSectionHeader {
@@ -279,7 +280,7 @@
 
 .AnnualPricingContainer {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 1rem;
   display: flex;
   padding: 1rem 1rem;
   justify-content: center;

@@ -1,0 +1,102 @@
+.AiSolutionSection {
+  width: 100%;
+  min-height: 100vh;
+  /* border: 2px solid red; */
+  margin-top: 5.6rem;
+}
+
+/* AI SOLUTIONS LANDING PAGE SECTION */
+
+.AiLandingPage {
+  background-color: var(--hover2);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.vectorImgtop {
+  position: absolute;
+  width: 136px;
+  height: 136px;
+  top: 0;
+  left: 0;
+}
+
+.vectorImgbottom {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  right: 35%;
+  bottom: 15%;
+}
+
+.ailandingpageContainer {
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.aiheaderImg {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.AiLandingPageHeader {
+  display: flex;
+  gap: 1em;
+}
+
+.AiLandingPageHeader h4 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  color: var(--blueText);
+}
+
+.ailandingpageContainer h2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  letter-spacing: -0.48px;
+  color: var(--blueText);
+  width: fit-content;
+}
+
+.ailandingpageImage {
+  position: relative;
+}
+
+.aigirlImg {
+  position: relative;
+  width: 700px;
+  height: 700px;
+}
+
+.ailandingpageImagetop {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  object-fit: contain;
+  top: 25%;
+  left: 10%;
+}
+
+.ailandingpageImagebottom {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  object-fit: contain;
+  bottom: 10%;
+  left: 10%;
+  z-index: 10;
+}

@@ -1,7 +1,9 @@
-import React from "react";
-
+import Aistyles from "./Aisolution.module.css"
+import AiLandingpage from "./aisolutionlandingpage/AiLandingpage";
 const Aisolution = () => {
-  return <div>Aisolution</div>;
+  return <section className={Aistyles.AiSolutionSection}>
+  <AiLandingpage/>
+  </section>;
 };
 
 export default Aisolution;
