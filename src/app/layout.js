@@ -35,6 +35,12 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+          rel="stylesheet"
+        />
       </head>
 
       <body className={montserrat.className}>
@@ -43,7 +49,6 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
         </div>
-       
       </body>
     </html>
   );

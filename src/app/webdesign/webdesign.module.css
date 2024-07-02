@@ -437,3 +437,41 @@
 .webPremiumPlan .lineThrough {
   color: #fff;
 }
+
+.webStandardPlan {
+  position: relative;
+}
+
+.webStandardPlan::before {
+  content: "Most POPULAR";
+  width: 167px;
+  padding: 8px;
+  position: absolute;
+  top: -10%;
+  right: 5%;
+  border: 2px solid var(--btn);
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.32px;
+  text-transform: capitalize;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #fff;
+  color: var(--btn);
+  font-family: "Shadows Into Light", cursive;
+}
+
+.enterprisePlan {
+  background-color: var(--yellow);
+  color: #000000;
+}
+
+.enterprisePlan h3 {
+  color: #000000;
+}
+
+.enterprisePlan .lineThrough {
+  color: #000000;
+}

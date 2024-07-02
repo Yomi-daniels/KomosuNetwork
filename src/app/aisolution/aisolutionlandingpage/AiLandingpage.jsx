@@ -19,13 +19,13 @@ const AiLandingpage = () => {
         </div>
         <div className={Aistyles.ailandingpageImage}>
         <div className={Aistyles.ailandingpageImagetop}>
-            <Image src="/Bot.png" fill/>
+            <Image src="/Bot.png" fill objectFit="contain"/>
         </div>
             <div className={Aistyles.aigirlImg}>
-                <Image src="/Ai girl.png" fill/>
+                <Image src="/Ai girl.png" fill objectFit="contain"/>
             </div>
             <div className={Aistyles.ailandingpageImagebottom}>
-            <Image src="/Frame 126 (1).png" fill/>
+            <Image src="/Frame 126 (1).png" fill objectFit="contain"/>
         </div>
         </div>
     </div>
