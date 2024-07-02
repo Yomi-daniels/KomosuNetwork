@@ -56,7 +56,7 @@ const LandingPage = () => {
         muted
         playsInline
       >
-        <source src="/Hero-background.mp4" type="video/mp4" />
+        <source src="/bg-vid-2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
