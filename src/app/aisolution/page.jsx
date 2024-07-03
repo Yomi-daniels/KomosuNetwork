@@ -2,6 +2,7 @@ import Aistyles from "./Aisolution.module.css"
 import AiLandingpage from "./aisolutionlandingpage/AiLandingpage";
 import AisolutionServices from "./aisolutionservices/AisolutionServices";
 import Aipricing from "./aisolutionpricing/Aipricing";
+import Contentmarketing from "../contentmarketing/page";
 const Aisolution = () => {
   return <section className={Aistyles.AiSolutionSection}>
   <AiLandingpage/>
