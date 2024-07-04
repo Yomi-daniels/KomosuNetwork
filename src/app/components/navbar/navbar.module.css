@@ -1,9 +1,9 @@
 .parent {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgb(255, 255, 255);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   width: 100%;
   left: 0;
   top: 0;
@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1400px;
+  max-width: 1316px;
   height: 100%;
   margin: 0 auto;
   padding: 0 1.2rem;
