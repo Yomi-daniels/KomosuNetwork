@@ -20,16 +20,18 @@ const OfferAnimation = () => {
       </div>
       <div className={styles.OfferAnimationContainer}>
         <div className={styles.OfferAnimationContainerContent}>
-          <div className={styles.OfferAnimationContainerContentHeader}>
-            <div className={styles.OfferAnimationContainerContentSmallImage}>
-              <Image src="/Vector (5).png" alt="offerAnimImg" fill />
+          <div className={styles.offerAnimTextContent}>
+            <div className={styles.OfferAnimationContainerContentHeader}>
+              <div className={styles.OfferAnimationContainerContentSmallImage}>
+                <Image src="/Vector (5).png" alt="offerAnimImg" fill />
+              </div>
+              <h6 className={styles.offerH6}>PROMOTIONAL VIDEOS</h6>
             </div>
-            <h6 className={styles.offerH6}>PROMOTIONAL VIDEOS</h6>
+            <h3>
+              Capture attention with high-quality visuals and engaging content
+              that keeps viewers interested.
+            </h3>
           </div>
-          <h3>
-            Capture attention with high-quality visuals and engaging content
-            that keeps viewers interested.
-          </h3>
           <div className={styles.offerAnimationFeatures}>
             <div className={styles.offerFeaturesContent}>
               <div className={styles.offerFeaturesImgShadow}>
@@ -56,28 +58,30 @@ const OfferAnimation = () => {
           </div>
           <div className={styles.OfferAnimationImageBoxContainer}>
             <div className={styles.OfferAnimationImageBoxContent}>
-              <div className={styles.ImageBox1}>
-                <Image src="/Rectangle 8 (3).png" alt="offerAnimImg" fill />
-              </div>
-            </div>
-            <div className={styles.OfferAnimationImageBoxContent}>
-              <div className={styles.ImageBox2}>
-                <Image src="/Group 6324.png" alt="offerAnimImg" fill />
+              <div className={styles.ImageBox}>
+                <Image
+                  src="/Group 6324.png"
+                  alt="offerAnimImg"
+                  fill
+                  objectFit="cover"
+                />
               </div>
             </div>
           </div>
         </div>
         <div className={styles.OfferAnimationContainerContent}>
-          <div className={styles.OfferAnimationContainerContentHeader}>
-            <div className={styles.OfferAnimationContainerContentSmallImage}>
-              <Image src="/Vector (7).png" alt="offerAnimImg" fill />
+          <div className={styles.offerAnimTextContent}>
+            <div className={styles.OfferAnimationContainerContentHeader}>
+              <div className={styles.OfferAnimationContainerContentSmallImage}>
+                <Image src="/Vector (7).png" alt="offerAnimImg" fill />
+              </div>
+              <h6 className={styles.businessAnalytics}>BUSINESS ANALYTICS</h6>
             </div>
-            <h6 className={styles.businessAnalytics}>BUSINESS ANALYTICS</h6>
+            <h3>
+              Transform your business with data-driven insight. Harness your
+              social power with in-depth knowledge.
+            </h3>
           </div>
-          <h3>
-            Transform your business with data-driven insight. Harness your
-            social power with in-depth knowledge.
-          </h3>
           <div className={styles.offerAnimationFeatures}>
             <div className={styles.offerFeaturesContent}>
               <div className={styles.offerFeaturesImgShadows}>
@@ -106,14 +110,14 @@ const OfferAnimation = () => {
             <div
               className={`${styles.OfferAnimationImageBoxContent} ${styles.OfferAnimationImageBoxContent2}`}
             >
-              <div className={`${styles.ImageBox} ${styles.ImageBoxsec}`}>
+              <div className={`${styles.ImageBox1} ${styles.ImageBoxsec}`}>
                 <Image src="/Group 6322.png" alt="offerAnimImg" fill />
               </div>
             </div>
             <div
               className={`${styles.OfferAnimationImageBoxContent} ${styles.OfferAnimationImageBoxContent2}`}
             >
-              <div className={`${styles.ImageBox} ${styles.ImageBoxsec2}`}>
+              <div className={`${styles.ImageBox2} ${styles.ImageBoxsec2}`}>
                 <Image src="/Group 6323.png" alt="offerAnimImg" fill />
               </div>
             </div>

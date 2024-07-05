@@ -31,9 +31,13 @@
 }
 
 .footerHeader h1 {
-  font-size: 2.9rem;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.32px;
   width: 716px;
-  line-height: 1.4;
+  font-family: var(--text-Font-Bold);
 }
 
 .buttonImage {
@@ -48,32 +52,49 @@
 }
 
 .footerBtn button {
-  width: 200px;
-  height: 50px;
+  width: 170px;
+  height: 55px;
+  padding: 8px;
   border-radius: 36px;
   background-color: var(--btn);
-  font-weight: 500;
   border: none;
   color: #fff;
-  font-size: 1.13rem;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.36px;
 }
 
 .footerBtn .footerbtn2 {
   display: flex;
-  background-color: #e6e6ff;
+  height: 55px;
+  width: 50%;
+  padding: 8px 12px;
+  justify-content: center;
   align-items: center;
-  width: 230px;
+  gap: 8px;
   justify-content: space-between;
-  color: var(--blueText);
+  text-align: center;
+  background-color: #fff;
+  color: var(--btn);
+  font-size: 18px;
+  font-style: normal;
   font-weight: 700;
-  /* gap: 1em; */
-  padding: 1.12rem;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.36px;
+  border: 1px solid var(--btn);
 }
 
 .buttonImageBg {
   background-color: var(--btn);
   border-radius: 100px;
   padding: 0.5rem;
+}
+
+.buttonImage {
+  width: 7.5px;
+  height: 10px;
 }
 
 .footerLinks,
@@ -84,16 +105,34 @@
   align-items: flex-start;
   gap: 2em;
   font-weight: 500;
+  font-family: var(--text-Font-Bold);
+  font-size: 18px;
 }
 
 .footerLink {
   display: flex;
   flex-direction: column;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  font-family: var(--text-Font-Bold);
 }
 
 .FooterContentContainer {
   display: flex;
   justify-content: space-between;
+}
+
+.FooterContentContainer h1 {
+  font-family: var(--Hero-Header);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.72px;
 }
 
 .SocialLink {

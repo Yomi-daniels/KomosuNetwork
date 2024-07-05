@@ -67,17 +67,7 @@ const Offer = () => {
                   Drive your automotive company forward with innovative and
                   stunning web design
                 </h1>
-                <div className={styles.WebDesignBtn}>
-                  <button className={styles.WebDesignBtn1}>See Pricing</button>
-                  <button className={styles.WebDesignBtn2}>
-                    Get Demo
-                    <div className={styles.RoundBgCOlor}>
-                      <div className={styles.WebBtnImg}>
-                        <Image src="/Vector.png" alt="vector" fill />
-                      </div>
-                    </div>
-                  </button>
-                </div>
+                <button className={styles.WebDesignBtn}>Get Started</button>
                 <div className={styles.WebDesignFeatures}>
                   <div className={styles.WebDesignFeaturesContent}>
                     <div className={styles.webFeaturesImgShadow}>
@@ -134,8 +124,23 @@ const Offer = () => {
                 </div>
               </div>
 
-              <div className={styles.webDesignCard}>
-                <Image src="/Image (4).png" fill />
+              <div className={`${styles.webDesignCardContainer} ${styles.webDesignCardContainer1}`}>
+                <div className={`${styles.webDesignCard} ${styles.webDesignCard1}`}>
+                  <Image
+                    src="/New Macbook Pro Mockup Front View.png"
+                    fill
+                    objectFit="contain"
+                  />
+                </div>
+                <div
+                  className={`${styles.webDesignCard} ${styles.webDesignCard2}`}
+                >
+                  <Image
+                    src="/Pixel 8 Pro Mockup Obsidian.png"
+                    fill
+                    objectFit="contain"
+                  />
+                </div>
               </div>
             </div>
           )}
@@ -156,17 +161,7 @@ const Offer = () => {
                   Accelerate your business with auto-pilot efficiency sponsored
                   by our AI-powered Chatbot
                 </h1>
-                <div className={styles.WebDesignBtn}>
-                  <button className={styles.WebDesignBtn1}>See Pricing</button>
-                  <button className={styles.WebDesignBtn2}>
-                    Get Demo
-                    <div className={styles.RoundBgCOlor}>
-                      <div className={styles.WebBtnImg}>
-                        <Image src="/Vector.png" alt="vector" fill />
-                      </div>
-                    </div>
-                  </button>
-                </div>
+                <button className={styles.WebDesignBtn}>Get Started</button>
                 <div className={styles.WebDesignFeatures}>
                   <div className={styles.WebDesignFeaturesContent}>
                     <div className={styles.webFeaturesImgShadow}>
@@ -225,8 +220,23 @@ const Offer = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.webDesignCard}>
-                <Image src="/Images (1).png" fill />
+              <div className={styles.webDesignCardContainer}>
+                <div className={`${styles.webDesignCard} ${styles.webDesignCard1}`}>
+                  <Image
+                    src="/New Macbook Pro Mockup Front View.png"
+                    fill
+                    objectFit="contain"
+                  />
+                </div>
+                <div
+                  className={`${styles.webDesignCard} ${styles.webDesignCard2}`}
+                >
+                  <Image
+                    src="/Pixel 8 Pro Mockup Obsidian.png"
+                    fill
+                    objectFit="contain"
+                  />
+                </div>
               </div>
             </div>
           )}
@@ -247,17 +257,7 @@ const Offer = () => {
                   Fuel your brand success with tailored content marketing
                   services championed by us
                 </h1>
-                <div className={styles.WebDesignBtn}>
-                  <button className={styles.WebDesignBtn1}>See Pricing</button>
-                  <button className={styles.WebDesignBtn2}>
-                    Get Demo
-                    <div className={styles.RoundBgCOlor}>
-                      <div className={styles.WebBtnImg}>
-                        <Image src="/Vector.png" alt="vector" fill />
-                      </div>
-                    </div>
-                  </button>
-                </div>
+                <button className={styles.WebDesignBtn}>Get Started</button>
                 <div className={styles.WebDesignFeatures}>
                   <div className={styles.WebDesignFeaturesContent}>
                     <div className={styles.webFeaturesImgShadow}>
@@ -314,8 +314,23 @@ const Offer = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.webDesignCard}>
-                <Image src="/Images (1).png" fill />
+              <div className={styles.webDesignCardContainer}>
+                <div className={`${styles.webDesignCard} ${styles.webDesignCard1}`}>
+                  <Image
+                    src="/New Macbook Pro Mockup Front View.png"
+                    fill
+                    objectFit="contain"
+                  />
+                </div>
+                <div
+                  className={`${styles.webDesignCard} ${styles.webDesignCard2}`}
+                >
+                  <Image
+                    src="/Pixel 8 Pro Mockup Obsidian.png"
+                    fill
+                    objectFit="contain"
+                  />
+                </div>
               </div>
             </div>
           )}
@@ -336,17 +351,7 @@ const Offer = () => {
                   Drive more leads and transform your dealership growth with our
                   expert solutions
                 </h1>
-                <div className={styles.WebDesignBtn}>
-                  <button className={styles.WebDesignBtn1}>See Pricing</button>
-                  <button className={styles.WebDesignBtn2}>
-                    Get Demo
-                    <div className={styles.RoundBgCOlor}>
-                      <div className={styles.WebBtnImg}>
-                        <Image src="/Vector.png" alt="vector" fill />
-                      </div>
-                    </div>
-                  </button>
-                </div>
+                <button className={styles.WebDesignBtn}>Get Started</button>
                 <div className={styles.WebDesignFeatures}>
                   <div className={styles.WebDesignFeaturesContent}>
                     <div className={styles.webFeaturesImgShadow}>
@@ -406,8 +411,23 @@ const Offer = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.webDesignCard}>
-                <Image src="/Image (5).png" fill />
+              <div className={styles.webDesignCardContainer}>
+                <div className={`${styles.webDesignCard} ${styles.webDesignCard1}`}>
+                  <Image
+                    src="/New Macbook Pro Mockup Front View.png"
+                    fill
+                    objectFit="contain"
+                  />
+                </div>
+                <div
+                  className={`${styles.webDesignCard} ${styles.webDesignCard2}`}
+                >
+                  <Image
+                    src="/Pixel 8 Pro Mockup Obsidian.png"
+                    fill
+                    objectFit="contain"
+                  />
+                </div>
               </div>
             </div>
           )}

@@ -136,6 +136,7 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.28px;
+  font-family: var(--text-Font-Black);
 }
 
 .heroSpan {
@@ -286,14 +287,19 @@
 
 .servicesHeader h2,
 .offerHeader {
-  font-size: 3rem;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+  letter-spacing: -0.4px;
+  text-transform: capitalize;
   margin-top: 1.2rem;
+  font-family: var(--text-Font-Bold);
 }
 
 .servicesSpan {
   color: var(--yellow);
   font-style: italic;
-  font-size: 3.5rem;
 }
 
 .subContent {
@@ -305,7 +311,7 @@
 }
 
 .servicesContainer {
-  max-width: 1350px;
+  max-width: 1120px;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -350,23 +356,19 @@
   gap: 24px;
 }
 
-.containerFlex1:last-of-type {
-  width: 720px;
-  min-height: 50%;
-}
 .containerFlex1,
 .containerSubFlex1 {
   overflow: hidden;
   position: relative;
   border: 1px solid #dcdbdb;
-  width: 608px;
-  min-height: 100%;
+  width: 544px;
+  height: 245px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  gap: 1em;
+  gap: 0.5em;
   padding: 1.5rem;
   transition:
     transform 0.3s ease,
@@ -384,16 +386,14 @@
   );
 }
 
-.containerSubFlex1:first-of-type {
-  width: 719px;
-}
-
-.containerFlex1:last-child {
-  padding: 1rem 2rem;
-}
-
 .containerFlexh5 {
-  font-size: 1.5rem;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.48px;
+  text-transform: capitalize;
+  font-family: var(--text-Font-Bold);
 }
 
 .containerFlexp {
@@ -470,19 +470,19 @@
 
 .videoSection {
   position: relative;
-  max-width: 1250px;
-  margin: 0 auto;
-  height: 100%;
+  max-width: 100%;
+  display: flex;
+  height: 627.763px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 
 .videoContainer {
-  max-width: 1250px;
+  max-width: 1120px;
   margin: 0 auto;
-  min-height: 100vh;
+  height: 100%;
   border-radius: 7px;
 }
 
@@ -493,13 +493,16 @@
   min-width: fit-content;
   padding: 1rem 1.5rem;
   color: var(--blueText);
-  font-size: 1.2rem;
+  font-size: 15.273px;
   font-weight: 500;
   text-align: center;
+  position: absolute;
+  top: -4%;
+  font-family: var(--text-Font-Bold);
 }
 
 .video {
-  width: 1250px;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 7px;
@@ -508,7 +511,7 @@
 .buttonContainer {
   position: absolute;
   top: 50%;
-  left: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   gap: 10px;
@@ -624,14 +627,12 @@
 .offerSpan {
   color: var(--yellow);
   font-style: italic;
-  font-size: 3.5rem;
 }
 
 .offerContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .offerSelectProps {
@@ -641,12 +642,12 @@
   align-items: center;
   background-color: var(--blueText);
   color: var(--text);
-  border-radius: 48px;
-  width: 755px;
-  padding: 1rem 1.2rem;
-  justify-content: space-between;
+  border-radius: 36px;
+  max-width: 650px;
+  padding: 0.75rem;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 1em;
   margin-top: 2rem;
   box-sizing: border-box;
 }
@@ -659,7 +660,7 @@
     color 0.3s,
     transform 0.3s;
   padding: 1rem; /* Ensure padding is applied to maintain consistent size */
-  border-radius: 36px;
+  border-radius: 24px;
   box-sizing: border-box;
 }
 
@@ -677,12 +678,12 @@
 }
 
 .webDesignContainer {
-  max-width: 100%;
+  max-width: 1120px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-top: 3rem;
-  gap: 5em;
+  /* gap: 5em; */
   height: 100%;
   position: relative;
 }
@@ -696,11 +697,52 @@
   max-width: 50%;
 }
 
+.webDesignCardContainer {
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .webDesignCard {
-  width: 658px;
-  height: 600px;
+  width: 485.237px;
+  height: 272.976px;
   border-radius: 20px;
   position: relative;
+  scale: 1;
+}
+
+.webDesignCardContainer1 .webDesignCard1::after {
+  content: "";
+  position: absolute;
+  right: -85%;
+  top: 10%;
+  background-color: var(--hover1);
+  width: 684px;
+  height: 406px;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.webDesignCard2 {
+  position: absolute;
+  width: 200.438px;
+  height: 330.293px;
+  top: 60%;
+}
+
+.webDesignCardContainer1 .webDesignCard2::after {
+  content: "";
+  position: absolute;
+  left: -16%;
+  bottom: 5%;
+  background-color: var(--hover1);
+  width: 153px;
+  height: 153px;
+  border-radius: 189.677px;
+  opacity: 0.6;
+  z-index: -1;
 }
 
 .webDesignHeader {
@@ -710,8 +752,13 @@
   margin-bottom: 1rem;
 }
 .webDesignHeader h5 {
-  font-size: 1.1rem;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
   color: var(--blueText);
+  font-family: var(--text-Font-Bold);
 }
 
 .webHeaderImgBg {
@@ -728,36 +775,22 @@
 
 .WebDesignBtn {
   display: flex;
-  gap: 1em;
-  margin-top: 2rem;
-}
-
-.WebDesignBtn button {
-  width: 200px;
-  height: 50px;
+  width: 184px;
+  height: 55px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
   border-radius: 36px;
-  font-weight: 500;
+  background-color: var(--btn);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.36px;
+  font-family: var(--text-Font-Bold);
   border: none;
   color: #fff;
-  font-size: 1.13rem;
-}
-
-.WebDesignBtn .WebDesignBtn1 {
-  background-color: #e6e6ff;
-  color: var(--blueText);
-  font-weight: 700;
-}
-
-.WebDesignBtn .WebDesignBtn2 {
-  background-color: #fff;
-  border-radius: 100px;
-  padding: 0.5rem;
-  color: var(--btn);
-  border: 2px solid var(--btn);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-weight: 700;
+  margin-top: 1rem;
 }
 
 .WebBtnImg {
@@ -775,7 +808,12 @@
 .webDesignh1 {
   width: 585px;
   color: var(--blueText);
-  font-size: 2.5rem;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: -0.24px;
+  font-family: var(--text-Font-Black);
 }
 
 .webFeaturesImgShadow {
@@ -802,7 +840,7 @@
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1em;
 }
 
 .WebDesignFeaturesContent,
@@ -817,7 +855,12 @@
 
 .WebDesignFeaturesContent p {
   color: var(--blueText);
-  font-size: 1.22rem;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
   width: 558px;
 }
 
@@ -843,11 +886,15 @@
 }
 .offerAnimHeaderh2 {
   color: var(--text);
-  font-size: 2.5rem;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+  letter-spacing: -0.4px;
+  font-family: var(--text-Font-Bold);
   text-align: center;
-  margin-top: 4rem;
   width: 60%;
-  font-weight: 500;
+  margin-top: 4rem;
 }
 
 .OfferHeaderButton {
@@ -908,29 +955,38 @@
   /* border: 2px solid red; */
 }
 .OfferAnimationContainerContent {
-  max-width: 600px;
+  max-width: 544px;
   background-color: var(--hover1);
-  height: 780px;
+  min-height: 683px;
   border-radius: 20px;
-  padding: 2rem;
+  padding: 40px 1.5rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+
+  /* justify-content: space-evenly; */
 }
+
+.offerAnimTextContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .OfferAnimationContainerContent {
   transition: 0.3s ease;
 }
 
 .OfferAnimationContainerContent:first-child {
   position: absolute;
-  bottom: -40%;
+  bottom: -20%;
   left: 0;
   transition: 0.3s ease;
 }
 
 .OfferAnimationContainerContent:first-child:hover {
   position: absolute;
-  transform: translateY(-42%);
+  transform: translateY(-30%);
 }
 
 .OfferAnimationContainerContent:last-child {
@@ -962,8 +1018,8 @@
   display: flex;
   align-items: center;
   gap: 0.5em;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
+  /* margin-bottom: 1rem; */
+  /* margin-top: 3rem; */
   position: relative;
 }
 
@@ -981,13 +1037,23 @@
 
 .OfferAnimationContainerContent h3 {
   color: var(--blueText);
-  line-height: 1.6;
-  font-size: 2rem;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  letter-spacing: -0.48px;
+  font-family: var(--text-Font-Black);
 }
 
 .OfferAnimationContainerContentHeader .offerH6 {
-  font-size: 1.1rem;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.08px; /* 156% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
   color: var(--blueText);
+  font-family: var(--text-Font-Bold);
 }
 
 .businessAnalytics {
@@ -1057,18 +1123,16 @@
   width: 100%;
   padding: 0;
 }
-/* 
-.OfferAnimationImageBoxContainer .OfferAnimationImageBoxContent:first-child {
-  position: absolute;
-  left: -10%;
-  max-width: 288px;
+
+.ImageBox {
+  width: 496px;
+  height: 259px;
+  position: relative;
 }
 
-.OfferAnimationImageBoxContainer .OfferAnimationImageBoxContent:last-child {
-  position: absolute;
-  right: -10%;
-  margin-top: 2rem;
-} */
+.ImageBox img {
+  border-radius: 8px;
+}
 
 /* TESTIMONIAL SECTION */
 
@@ -1082,7 +1146,7 @@
 .tesimonialContainer {
   background-color: var(--SkyBlue);
   border-radius: 1px solid var(--btn);
-  max-width: 1250px;
+  max-width: 1120px;
   min-height: 528px;
   margin-inline: auto;
   margin-top: 2rem;
@@ -1119,7 +1183,7 @@
   height: 300px;
   display: flex;
   justify-content: space-between;
-  gap: 1em;
+  gap: 0.5em;
   flex-direction: column;
   align-items: flex-start;
   color: var(--blueText);
@@ -1128,13 +1192,20 @@
 
 .feedbacks {
   max-width: 730px;
-  line-height: 1.6;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 500;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.18px;
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 .testifierName {
-  font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
 }
 
 .role {
@@ -1181,6 +1252,18 @@
   text-align: center;
 }
 
+.FAQHeaderContents h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.32px;
+  text-transform: capitalize;
+  margin-top: 1rem;
+  color: var(--blueText);
+  font-family: var(--text-Font-Bold);
+}
+
 .FAQContainer {
   position: relative;
   max-width: 1250px;
@@ -1219,6 +1302,12 @@
 
 .FAQContents h4 {
   color: var(--blueText);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.4px;
+  font-family: var(--text-Font-Bold);
 }
 
 .FAQline {

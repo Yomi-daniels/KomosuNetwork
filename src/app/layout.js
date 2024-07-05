@@ -1,10 +1,11 @@
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-import { Montserrat } from "next/font/google";
-const montserrat = Montserrat({
-  subsets: ["latin"],
-});
+// import { Montserrat } from "next/font/google";
+// const montserrat = Montserrat({
+//   subsets: ["latin"],
+// });
+// import satoshiFont from "@next/font/local";
 export const metadata = {
   title: "Komosu Network",
   description:
@@ -43,7 +44,7 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body className={montserrat.className}>
+      <body>
         <div className="container">
           <Navbar />
           {children}

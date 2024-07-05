@@ -1,35 +1,42 @@
+/* global.css */
 @font-face {
-  font-family: satoshi light;
-  src: url(/public//fonts/Satoshi-Light.otf);
+  font-family: "SatoshiLight";
+  src: url("/fonts/Satoshi-Light.otf") format("opentype");
 }
+
 @font-face {
-  font-family: satoshi bold;
-  src: url(/public//fonts/Satoshi-Bold.otf);
+  font-family: "SatoshiBold";
+  src: url("/fonts/Satoshi-Bold.otf") format("opentype");
 }
+
 @font-face {
-  font-family: satoshi regular;
-  src: url(/public//fonts/Satoshi-Regular.otf);
+  font-family: "SatoshiRegular";
+  src: url("/fonts/Satoshi-Regular.otf") format("opentype");
 }
+
 @font-face {
-  font-family: satoshi black;
-  src: url(/public//fonts/Satoshi-Black.otf);
+  font-family: "SatoshiBlack";
+  src: url("/fonts/Satoshi-Black.otf") format("opentype");
 }
+
 @font-face {
-  font-family: koulen;
-  src: url(/public/fonts/AMOQz46as3KIBPeWgnA9kuYMUg.ttf);
+  font-family: "Koulen";
+  src: url("/fonts/AMOQz46as3KIBPeWgnA9kuYMUg.ttf") format("truetype");
 }
+
 @font-face {
-  font-family: satoshi shadows into light;
-  src: url(/public//fonts/ShadowsIntoLight.ttf);
+  font-family: "ShadowsIntoLight";
+  src: url("/fonts/ShadowsIntoLight.ttf") format("truetype");
 }
+
 :root {
   --navbar-bg: #131313;
-  --textFontLight: satoshi light;
-  --textFontBold: satoshi bold;
-  --textFontRegular: satoshi regular;
-  --textFontBlack: satoshi black;
-  --HeroHeader: koulen;
-  --customFont: satoshi shadows into light;
+  --text-Font-Light: satoshilight;
+  --text-Font-Bold: satoshibold;
+  --text-Font-Regular: satoshiregular;
+  --text-Font-Black: satoshiblack;
+  --Hero-Header: koulen;
+  --custom-Font: shadowsintolight;
   --bg: #fff;
   --btn-Gradient: linear-gradient(45deg, #0500ff, #0500e6);
   --btn-Hover: 1px -2px 2px #ffffffa2, -1px -1px 1px #ffffffa2;
@@ -56,14 +63,14 @@
   box-sizing: border-box;
 }
 body {
-  background-color: var(--bg);
   overflow-x: hidden;
-  font-family: var(--textFontRegular);
+  font-family: var(--text-Font-Light);
 }
 a {
   color: inherit;
   text-decoration: none;
 }
+
 /* 
 .container {
   background-color: var(--bg);
