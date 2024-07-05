@@ -8,7 +8,7 @@
 .aboutUsLandingSection {
   max-width: 100%;
   min-height: 100%;
-  margin-top: 3rem;
+  padding-top: 5rem;
 }
 
 .aboutPageHeader {
@@ -21,8 +21,13 @@
 }
 
 .aboutPageHeader h2 {
-  font-size: 4rem;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 60px */
+  letter-spacing: -0.5px;
   color: var(--blueText);
+  font-family: var(--text-Font-Bold);
 }
 
 .aboutPageHeader p {
@@ -40,6 +45,7 @@
   max-width: 1300px;
   min-height: 100vh;
   margin-inline: auto;
+  margin-top: 4rem;
 }
 
 .whoareweHeader {
@@ -49,23 +55,38 @@
 
 .whoareweHeader h4 {
   color: var(--btn);
-  font-size: 1rem;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
   margin-top: 1rem;
+  font-family: var(--text-Font-Bold);
 }
 
 .whoareweHeader h2 {
   color: var(--blueText);
   max-width: 858px;
   font-size: 3rem;
-  line-height: 1.2;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.32px;
+  font-family: var(--text-Font-Bold);
 }
 
 .whoareweHeader p {
-  font-size: 1rem;
   color: var(--blueText);
   max-width: 773px;
-  line-height: 1.6;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
   align-self: flex-end;
+  margin-top: 2rem;
 }
 
 .whoareweImageContainer {

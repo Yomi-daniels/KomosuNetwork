@@ -71,6 +71,7 @@
 } */
 .active {
   position: relative;
+  font-family: var(--text-Font-Bold);
 }
 
 .active:hover {

@@ -54,30 +54,30 @@ const Links = () => {
     <div className={styles.container}>
       <div className={styles.links}>
         {links.map((link) => (
-          <div key={link.title} className={styles.linkItem}>
+          <div
+            key={link.title}
+            className={`${styles.linkItem} ${link.title === "Services" ? styles.customLinkItem : ""}  ${link.title === "Request Demo" ? styles.requestDemoLink : ""}`}
+          >
             {link.subLinks ? (
               <>
-                <div
-                  className={styles.servicesContainer}
-                  onClick={handleServiceClick}
-                >
+                <div className={styles.servicesContainer}>
                   <NavLink item={link} />
-                  <button className={styles.dropdownButton}>
+                  {/* <button className={styles.dropdownButton}>
                     <Image
                       src="/arrow-drop-down-line.svg"
                       alt="dropdown"
                       width={20}
                       height={20}
                     />
-                  </button>
+                  </button> */}
                 </div>
-                {servicesOpen && (
+                {
                   <div className={styles.subLinks}>
                     {link.subLinks.map((subLink) => (
                       <NavLink item={subLink} key={subLink.title} />
                     ))}
                   </div>
-                )}
+                }
               </>
             ) : (
               <NavLink item={link} />
@@ -85,7 +85,7 @@ const Links = () => {
           </div>
         ))}
       </div>
-      <button
+      {/* <button
         onClick={() => setOpen((prev) => !prev)}
         className={styles.menuButton}
       >
@@ -95,7 +95,7 @@ const Links = () => {
           width={24}
           height={24}
         />
-      </button>
+      </button> */}
       {open && (
         <div className={styles.mobileContainer}>
           <div className={styles.mobileLinks}>
