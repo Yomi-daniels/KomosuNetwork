@@ -1,13 +1,14 @@
 "use client";
+// import '../styles/globals.css';
 import Image from "next/image";
 import styles from "./sections.module.css";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { Montserrat } from "next/font/google";
-const montserratFont = Montserrat({
-  subsets: ["latin"],
-  weight: ["900"],
-});
+// import { Montserrat } from "next/font/google";
+// const montserratFont = Montserrat({
+//   subsets: ["latin"],
+//   weight: ["900"],
+// });
 
 const LandingPage = () => {
   const videoRef = useRef(null);
@@ -60,12 +61,12 @@ const LandingPage = () => {
         Grow and expand your business with
       </p>
       <h1
-          className={`${styles.heroHeader} ${montserratFont.className}`}
+          className={styles.heroHeader} 
          
         >
           <span className={styles.heroSpan}>KOMOSU</span> NETWORK
         </h1>
-        <button className={styles.headerbtn} ref={buttonRef}>
+        <button className={styles.headerbtn}>
           Learn more
           <div className={styles.buttonImageBg}>
             <div className={styles.buttonImage}>

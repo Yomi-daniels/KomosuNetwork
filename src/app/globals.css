@@ -1,18 +1,18 @@
-/* @font-face {
+@font-face {
   font-family: satoshi light;
-  src: url(/public/fonts/Satoshi-Light.otf);
+  src: url(/public//fonts/Satoshi-Light.otf);
 }
 @font-face {
   font-family: satoshi bold;
-  src: url(/public/fonts/Satoshi-Bold.otf);
+  src: url(/public//fonts/Satoshi-Bold.otf);
 }
 @font-face {
   font-family: satoshi regular;
-  src: url(/public/fonts/Satoshi-Regular.otf);
+  src: url(/public//fonts/Satoshi-Regular.otf);
 }
 @font-face {
   font-family: satoshi black;
-  src: url(/public/fonts/Satoshi-Black.otf);
+  src: url(/public//fonts/Satoshi-Black.otf);
 }
 @font-face {
   font-family: koulen;
@@ -20,8 +20,8 @@
 }
 @font-face {
   font-family: satoshi shadows into light;
-  src: url(./components/navbar/fonts/ShadowsIntoLight.ttf);
-} */
+  src: url(/public//fonts/ShadowsIntoLight.ttf);
+}
 :root {
   --navbar-bg: #131313;
   --textFontLight: satoshi light;
@@ -58,6 +58,7 @@
 body {
   background-color: var(--bg);
   overflow-x: hidden;
+  font-family: var(--textFontRegular);
 }
 a {
   color: inherit;
