@@ -45,7 +45,7 @@
 
 .HeroText {
   position: absolute;
-  top: 20%;
+  top: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,7 +129,11 @@
 
 .heroHeader {
   color: var(--text);
-  font-size: 5rem;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.28px;
 }
 
 .heroSpan {
@@ -138,7 +142,7 @@
 
 .HeaderContent {
   position: absolute;
-  bottom: 5%;
+  bottom: 3%;
   left: 5%;
   color: #fff;
   padding: 0 7rem;
@@ -147,8 +151,12 @@
 
 .heroSubText {
   width: 40%;
-  line-height: 1.6;
-  font-size: 0.9rem;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.18px;
+  text-transform: capitalize;
 }
 
 @media (max-width: 1279px) {
