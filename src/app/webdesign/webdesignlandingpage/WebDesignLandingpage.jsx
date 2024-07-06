@@ -3,7 +3,12 @@ import webstyle from "../webdesign.module.css";
 import Image from "next/image";
 import LandingPageButtons from "../components/LandingPageButtons";
 import { ScrollParallax } from "react-just-parallax";
+import { Montserrat } from "next/font/google";
 import { useRef } from "react";
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["700"],
+});
 const WebDesignLandingpage = () => {
   const parallaxRef = useRef(null);
   return (
@@ -12,7 +17,9 @@ const WebDesignLandingpage = () => {
         <Image src="/webdesign vector.png" fill />
       </div>
       <div className={webstyle.webdesignLandingPageContainer}>
-        <div className={webstyle.webdesignTextContainer}>
+        <div
+          className={`${webstyle.webdesignTextContainer} ${montserrat.className}`}
+        >
           <div className={webstyle.headerContent}>
             <div className={webstyle.headerimg}>
               <Image src="/Vector (5).png" fill />

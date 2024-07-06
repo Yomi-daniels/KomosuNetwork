@@ -109,12 +109,16 @@
   max-width: 1120px;
   height: 100%;
   margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
 }
 
 .leadGenServicesContent {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+
 }
 
 .leadGenServicesContentText h4 {
@@ -127,10 +131,11 @@
   text-transform: capitalize;
   /* width: 80%; */
   margin-bottom: 1rem;
+  font-family: var(--text-Font-Bold);
 }
 
 .leadGenServicesContentText {
-  width: 50%;
+  width: 40%;
 }
 
 .leadImageWrapper {

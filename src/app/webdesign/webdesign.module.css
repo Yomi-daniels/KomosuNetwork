@@ -63,7 +63,7 @@
 .buttonContainer {
   display: flex;
   align-items: center;
-  gap: 3em;
+  gap: 1em;
   margin-top: 2rem;
 }
 
@@ -137,7 +137,7 @@
 .webWorksSection {
   width: 100%;
   min-height: 100vh;
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 
 .webWorksContainer {
@@ -151,6 +151,11 @@
   text-align: center;
   font-size: 40px;
   color: var(--blueText);
+  font-family: var(--text-Font-Bold);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+  letter-spacing: -0.4px;
 }
 
 .headerSpan {
@@ -202,6 +207,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 2em;
+  width: 544px;
 }
 
 .webdesignTextContent button,
@@ -227,6 +233,13 @@
 .webdesignTextContent2 h2 {
   font-size: 40px;
   color: var(--blueText);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.48px;
+  text-transform: capitalize;
+  font-family: var(--text-Font-Bold);
 }
 
 .webdesignImg {
@@ -270,8 +283,19 @@
   text-transform: capitalize;
 }
 
+.WebPricingSectionHeader h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.32px;
+  text-transform: capitalize;
+  margin-bottom: 6px;
+  font-family: var(--text-Font-Bold);
+}
+
 .WebPricingContainer {
-  max-width: 1300px;
+  max-width: 1120px;
   height: 100%;
   margin-inline: auto;
   display: flex;
@@ -287,7 +311,7 @@
   text-align: center;
   margin-top: 1rem;
   display: flex;
-  padding: 1rem 1rem;
+  padding: 10.5px 12px;
   justify-content: center;
   width: fit-content;
   gap: 5px;
@@ -308,6 +332,7 @@
   color: var(--blueText);
   padding: 1rem 1.5rem;
   border-radius: 48px;
+  font-family: var(--text-Font-Bold);
 }
 
 .tickImg {
@@ -326,14 +351,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1em;
+  /* gap: 1em; */
   margin-top: 3rem;
 }
 
 .webBasicPlan {
   width: 424px;
   padding: 40px 20px;
-  border-radius: 20px;
+  border-radius: 20px 0 0 20px;
   border: 1px solid var(--blueText);
   gap: 1em;
   display: flex;
@@ -347,6 +372,7 @@
   letter-spacing: 0.48px;
   text-transform: capitalize;
   color: var(--blueText);
+  font-family: var(--text-Font-Bold);
 }
 
 .webBasicPlan p {
@@ -356,6 +382,7 @@
   line-height: 150%; /* 27px */
   letter-spacing: 0.18px;
   color: var(--blueText);
+  font-family: var(--text-Font-Regular);
 }
 
 .webBasicPlan h3 {
@@ -365,6 +392,7 @@
   font-weight: 700;
   line-height: 120%; /* 48px */
   letter-spacing: -0.4px;
+  font-family: var(--text-Font-Bold);
 }
 
 .webBasicPlan h3 span {
@@ -419,12 +447,14 @@
   font-weight: 400;
   line-height: 150%; /* 27px */
   letter-spacing: 0.36px;
+  font-family: var(--text-Font-Light);
 }
 
 .webPremiumPlan {
   background-color: var(--btn);
   color: #fff;
   position: relative;
+  border-radius: 20px;
 }
 
 .webPremiumPlan h4 {
@@ -445,6 +475,8 @@
 
 .webStandardPlan {
   position: relative;
+  margin-top: 4rem;
+  border-radius: 0px 20px 20px 0;
 }
 
 .webStandardPlan::before {

@@ -45,6 +45,7 @@
     opacity 0.4s ease-in,
     visibility 0.4s ease-in;
   font-family: var(--text-Font-Light);
+  z-index: 55;
 }
 
 .customLinkItem:hover .subLinks {
@@ -83,6 +84,8 @@
   border-radius: 36px;
   z-index: -1;
   background: var(--btn);
+  cursor: pointer;
+  z-index: 9;
 }
 
 .requestDemoLink a {
