@@ -18,10 +18,20 @@ const WhoareweSection = () => {
       </div>
       <div className={aboutstyles.whoareweImageContainer}>
         <div className={aboutstyles.whoareWeImg}>
-          <Image src="/Rectangle 14 (1).png" alt="who are we image" fill />
+          <Image
+            src="/Rectangle 14 (1).png"
+            alt="who are we image"
+            fill
+            objectFit="cover"
+          />
         </div>
         <div className={aboutstyles.whoareWeImg2}>
-          <Image src="/Rectangle 16 (1).png" alt="who are we image" fill />
+          <Image
+            src="/Rectangle 16 (1).png"
+            alt="who are we image"
+            fill
+            objectFit="cover"
+          />
         </div>
       </div>
     </section>
