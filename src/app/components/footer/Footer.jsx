@@ -29,7 +29,7 @@ const Footer = () => {
             <h1>KOMOSU NETWORK</h1>
             <div className={styles.footerLinks}>
               <Link href="/about">About us</Link>
-              <Link href="/servicesLink">Services</Link>
+              {/* <Link href="/servicesLink">Services</Link> */}
               <Link href="/pricing">Pricing</Link>
               <Link href="/contact">Contact</Link>
               <Link href="/request-demo">Request Demo</Link>

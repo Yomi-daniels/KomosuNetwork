@@ -74,9 +74,8 @@
   font-family: var(--text-Font-Bold);
 }
 
-.active:hover {
-  color: #f5f5f5;
-}
-.demostyles {
-  border: 2px solid red;
+@media (max-width: 768px) {
+  .container {
+    color: rgb(255, 255, 255);
+  }
 }
