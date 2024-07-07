@@ -5,11 +5,11 @@ const LandingPageButtons = () => {
   return (
     <div className={webstyle.buttonContainer}>
       <Link href="/pricing">
-        <button>See Pricing</button>
+        <button className={webstyle.pricingbtn}>See Pricing</button>
       </Link>
 
       <Link href="/request-demo">
-        <button>
+        <button className={webstyle.demobtn}>
           Get Demo
           <div className={webstyle.butttonBlue}>
             <div className={webstyle.buttonImg}>

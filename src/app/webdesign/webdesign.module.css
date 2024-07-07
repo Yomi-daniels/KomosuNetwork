@@ -30,6 +30,10 @@
   gap: 1em;
 }
 
+.webdesignTextContainer {
+  z-index: 66;
+}
+
 .webdesignTextContainer h1 {
   margin: 1rem 0;
   color: var(--blueText);
@@ -68,7 +72,7 @@
   margin-top: 2rem;
 }
 
-.buttonContainer button {
+.buttonContainer .pricingbtn {
   display: flex;
   width: 184px;
   height: 55px;
@@ -82,14 +86,23 @@
   color: #ffff;
   font-weight: 700;
   font-size: 1rem;
-  
 }
 
-.buttonContainer button:last-child {
+.buttonContainer .demobtn {
+  display: flex;
+  width: 184px;
+  height: 55px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 36px;
   background-color: #fff;
   border: 1px solid var(--btn);
   color: var(--btn);
   justify-content: space-around;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .webdesignImageContainer {
