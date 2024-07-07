@@ -5,6 +5,7 @@ import GetStarted from "@/app/webdesign/components/GetStarted";
 import Testimonials from "@/sections/testimonials";
 import { ScrollParallax } from "react-just-parallax";
 import FAQ from "@/sections/faq";
+import Link from "next/link";
 const leadGenServices = () => {
   return (
     <section className={leadStyles.leadServicesSection}>
@@ -54,7 +55,9 @@ const leadGenServices = () => {
           <h2>
             Transform Your Sales with Our Proven Lead Generation Solutions
           </h2>
-          <button>Contact us</button>
+          <Link href="/contact">
+            <button>Contact us</button>
+          </Link>
           <div className={leadStyles.servicesContactImgbottom}>
             <Image src="/Group 2.png" fill />
           </div>

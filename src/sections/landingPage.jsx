@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./sections.module.css";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import Link from "next/link";
 // import { Montserrat } from "next/font/google";
 // const montserratFont = Montserrat({
 //   subsets: ["latin"],
@@ -56,28 +57,25 @@ const LandingPage = () => {
     <section className={styles.heroSection}>
       <div className={styles.heroContainer}>
         <div className={styles.heroImg}>
-          <Image src="/landing image.png" layout="fill" objectFit="cover"/>
+          <Image src="/landing image.png" layout="fill" objectFit="cover" />
         </div>
       </div>
 
       <div className={styles.HeroText}>
-      <p className={styles.heroSub}>
-        Grow and expand your business with
-      </p>
-      <h1
-          className={styles.heroHeader}
-         
-        >
+        <p className={styles.heroSub}>Grow and expand your business with</p>
+        <h1 className={styles.heroHeader}>
           <span className={styles.heroSpan}>KOMOSU</span> NETWORK
         </h1>
-        <button className={styles.headerbtn}>
-          Learn more
-          <div className={styles.buttonImageBg}>
-            <div className={styles.buttonImage}>
-              <Image src="/Vector.png" alt="vector" fill />
+        <Link href="/about">
+          <button className={styles.headerbtn}>
+            Learn more
+            <div className={styles.buttonImageBg}>
+              <div className={styles.buttonImage}>
+                <Image src="/Vector.png" alt="vector" fill />
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </Link>
       </div>
       <div className={styles.HeaderContent}>
         <p className={styles.heroSubText}>
@@ -86,9 +84,7 @@ const LandingPage = () => {
           impressions through content marketing and lead generations.
         </p>
       </div>
-
     </section>
-
   );
 };
 

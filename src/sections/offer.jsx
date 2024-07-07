@@ -2,6 +2,7 @@
 import styles from "./sections.module.css";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Shadows_Into_Light } from "next/font/google";
 
 const shadowFont = Shadows_Into_Light({
@@ -67,7 +68,9 @@ const Offer = () => {
                   Drive your automotive company forward with innovative and
                   stunning web design
                 </h1>
-                <button className={styles.WebDesignBtn}>Get Started</button>
+                <Link href="/webdesign">
+                  <button className={styles.WebDesignBtn}>Get Started</button>
+                </Link>
                 <div className={styles.WebDesignFeatures}>
                   <div className={styles.WebDesignFeaturesContent}>
                     <div className={styles.webFeaturesImgShadow}>
@@ -124,8 +127,12 @@ const Offer = () => {
                 </div>
               </div>
 
-              <div className={`${styles.webDesignCardContainer} ${styles.webDesignCardContainer1}`}>
-                <div className={`${styles.webDesignCard} ${styles.webDesignCard1}`}>
+              <div
+                className={`${styles.webDesignCardContainer} ${styles.webDesignCardContainer1}`}
+              >
+                <div
+                  className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
+                >
                   <Image
                     src="/New Macbook Pro Mockup Front View.png"
                     fill
@@ -161,7 +168,9 @@ const Offer = () => {
                   Accelerate your business with auto-pilot efficiency sponsored
                   by our AI-powered Chatbot
                 </h1>
-                <button className={styles.WebDesignBtn}>Get Started</button>
+                <Link href="/aisolution">
+                  <button className={styles.WebDesignBtn}>Get Started</button>
+                </Link>
                 <div className={styles.WebDesignFeatures}>
                   <div className={styles.WebDesignFeaturesContent}>
                     <div className={styles.webFeaturesImgShadow}>
@@ -221,7 +230,9 @@ const Offer = () => {
                 </div>
               </div>
               <div className={styles.webDesignCardContainer}>
-                <div className={`${styles.webDesignCard} ${styles.webDesignCard1}`}>
+                <div
+                  className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
+                >
                   <Image
                     src="/New Macbook Pro Mockup Front View.png"
                     fill
@@ -257,7 +268,9 @@ const Offer = () => {
                   Fuel your brand success with tailored content marketing
                   services championed by us
                 </h1>
-                <button className={styles.WebDesignBtn}>Get Started</button>
+                <Link href="/contentmarketing">
+                  <button className={styles.WebDesignBtn}>Get Started</button>
+                </Link>
                 <div className={styles.WebDesignFeatures}>
                   <div className={styles.WebDesignFeaturesContent}>
                     <div className={styles.webFeaturesImgShadow}>
@@ -315,7 +328,9 @@ const Offer = () => {
                 </div>
               </div>
               <div className={styles.webDesignCardContainer}>
-                <div className={`${styles.webDesignCard} ${styles.webDesignCard1}`}>
+                <div
+                  className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
+                >
                   <Image
                     src="/New Macbook Pro Mockup Front View.png"
                     fill
@@ -351,7 +366,9 @@ const Offer = () => {
                   Drive more leads and transform your dealership growth with our
                   expert solutions
                 </h1>
-                <button className={styles.WebDesignBtn}>Get Started</button>
+                <Link href="/leadgeneration">
+                  <button className={styles.WebDesignBtn}>Get Started</button>
+                </Link>
                 <div className={styles.WebDesignFeatures}>
                   <div className={styles.WebDesignFeaturesContent}>
                     <div className={styles.webFeaturesImgShadow}>
@@ -412,7 +429,9 @@ const Offer = () => {
                 </div>
               </div>
               <div className={styles.webDesignCardContainer}>
-                <div className={`${styles.webDesignCard} ${styles.webDesignCard1}`}>
+                <div
+                  className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
+                >
                   <Image
                     src="/New Macbook Pro Mockup Front View.png"
                     fill

@@ -2,6 +2,8 @@ import webstyle from "../webdesign.module.css";
 import { Shadows_Into_Light } from "next/font/google";
 import Image from "next/image";
 import WebDesignPricingPlans from "../webdesignpricing/WebDesignPricingPlans";
+import Link from "next/link";
+import GetStarted from "../components/GetStarted";
 
 const shadowsFont = Shadows_Into_Light({
   subsets: ["latin"],
@@ -45,7 +47,7 @@ const WebDesignWorks = () => {
               Tailored website designs that reflect your brand’s identity and
               values.
             </h2>
-            <button>Get Started</button>
+            <GetStarted />
           </div>
           <div className={webstyle.webdesignimgContent}>
             <div className={webstyle.webdesignImg}>
@@ -64,7 +66,7 @@ const WebDesignWorks = () => {
               Tailored website designs that reflect your brand's identity and
               values.
             </h2>
-            <button>Get Started</button>
+            <GetStarted />
           </div>
         </div>
       </div>

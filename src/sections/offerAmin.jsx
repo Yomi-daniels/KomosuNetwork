@@ -1,5 +1,6 @@
 import styles from "./sections.module.css";
 import Image from "next/image";
+import Link from "next/link";
 const OfferAnimation = () => {
   return (
     <section className={styles.OfferAnimationSection}>
@@ -8,7 +9,9 @@ const OfferAnimation = () => {
           Drive your automotive company forward with innovative and stunning web
           design
         </h2>
-        <button className={styles.OfferHeaderButton}>Book a Demo</button>
+        <Link href="/request-demo">
+          <button className={styles.OfferHeaderButton}>Book a Demo</button>
+        </Link>
         <div className={styles.LineContainer}>
           <div className={styles.lineImg}>
             <Image src="/Rectangle 3.png" alt="offerAnimImg" fill />

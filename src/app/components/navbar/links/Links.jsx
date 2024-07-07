@@ -20,11 +20,11 @@ const links = [
       },
       {
         title: "Content Marketing",
-        path: "contentmarketing",
+        path: "/contentmarketing",
       },
       {
         title: "Lead Generation",
-        path: "leadgeneration",
+        path: "/leadgeneration",
       },
     ],
   },

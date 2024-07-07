@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./sections.module.css";
 import Servicesflex from "./servicesflex";
+import Link from "next/link";
 import { Shadows_Into_Light } from "next/font/google";
 
 const shadows = Shadows_Into_Light({
@@ -34,7 +35,9 @@ const Services = () => {
       </div>
       <Servicesflex />
       <div className={styles.servicesLastContentText}>
-        <p>Learn more about Komosu</p>
+        <Link href="/about">
+          <p>Learn more about Komosu</p>
+        </Link>
         <div className={styles.buttonImageBg}>
           <div className={styles.buttonImage}>
             <Image src="/Vector.png" alt="vector" fill />
