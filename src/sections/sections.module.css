@@ -132,8 +132,8 @@
 
 .buttonImage {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border-radius: 50px;
 }
 
@@ -260,7 +260,7 @@
   height: 100%;
   background-color: #ffffff;
   color: #000000;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 .ServicesTextContainer {
@@ -296,7 +296,7 @@
 
 .servicesHeader h2,
 .offerHeader {
-  font-size: 32px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 48px */
@@ -309,6 +309,7 @@
 .servicesSpan {
   color: var(--yellow);
   font-style: italic;
+  font-size: 40px;
 }
 
 .subContent {
@@ -348,14 +349,16 @@
   justify-content: center;
   gap: 1em;
   color: var(--blueText);
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   cursor: pointer;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .servicesLastContentText p {
   color: inherit;
   font-weight: 500;
+  font-size: 18px;
+  color: var(--btn);
 }
 
 .containerflex,

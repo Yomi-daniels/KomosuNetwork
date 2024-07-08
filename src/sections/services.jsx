@@ -36,12 +36,11 @@ const Services = () => {
       <Servicesflex />
       <div className={styles.servicesLastContentText}>
         <Link href="/about">
-          <p>Learn more about Komosu</p>
+          <p>Learn more</p>
         </Link>
-        <div className={styles.buttonImageBg}>
-          <div className={styles.buttonImage}>
-            <Image src="/Vector.png" alt="vector" fill />
-          </div>
+
+        <div className={styles.buttonImage}>
+          <Image src="/View plan button (4).png" alt="vector" fill />
         </div>
       </div>
     </section>
