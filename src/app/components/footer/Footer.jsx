@@ -9,20 +9,24 @@ const Footer = () => {
           <div className={styles.footerHeader}>
             <h1>Ready to scale up your business growth?</h1>
             <div className={styles.footerBtn}>
-              <button className={styles.footerbtn1}>See Pricing</button>
-              <button className={styles.footerbtn2}>
-                Book a Demo
-                <div className={styles.buttonImageBg}>
-                  <div className={styles.buttonImage}>
-                    <Image
-                      src="/Vector.png"
-                      alt="vector"
-                      fill
-                      objectFit="contain"
-                    />
+              <Link href="/pricing">
+                <button className={styles.footerbtn1}>See Pricing</button>
+              </Link>
+              <Link href="/request-demo">
+                <button className={styles.footerbtn2}>
+                  Book a Demo
+                  <div className={styles.buttonImageBg}>
+                    <div className={styles.buttonImage}>
+                      <Image
+                        src="/Vector.png"
+                        alt="vector"
+                        fill
+                        objectFit="contain"
+                      />
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
           <div className={styles.FooterContentContainer}>

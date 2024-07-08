@@ -163,7 +163,6 @@
   text-transform: capitalize;
 }
 
-
 @media (min-width: 1628px) {
   .HeroText {
     left: 15%;
@@ -866,6 +865,46 @@
   width: 558px;
 }
 
+.OfferOfferContentContainer {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.section {
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+.section.fadeIn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.section.fadeOut {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.webDesignContainer,
+.aiSolution,
+.contentMarketing,
+.leadGeneration {
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+.webDesignContainer.active,
+.aiSolution.active,
+.contentMarketing.active,
+.leadGeneration.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* OFFER ANIMATION SECTION */
 
 .OfferAnimationSection {
@@ -1176,7 +1215,7 @@
 }
 .avatar {
   position: relative;
-  min-width: 340px;
+  width: 340px;
   height: 400px;
 }
 .testimonialTextContent {
@@ -1232,7 +1271,7 @@
 .testimonialbuttonDirection {
   display: flex;
   align-items: center;
-  gap: 2em;
+  gap: 2.5em;
   position: absolute;
   right: 8%;
   bottom: 0;
@@ -1296,9 +1335,43 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  border-radius: 10px;
+  /* padding: 1rem 1.5rem; */
+  height: 100%;
+}
+
+.FAQContainerContents {
+  flex-direction: column;
+  display: flex;
+  cursor: pointer;
   border: 1px solid#DAD9FF;
   border-radius: 10px;
   padding: 1rem 1.5rem;
+  height: 100%;
+}
+
+.FAQAnswer {
+  border-top: 1px solid#DAD9FF;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  /* display: none; */
+}
+
+.FAQAnswer {
+  display: none;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+.FAQAnswer.expanded {
+  display: block;
+  max-height: 200px; /* Adjust this value according to your content height */
+  opacity: 1;
 }
 
 .FAQContents h4 {
@@ -1322,4 +1395,110 @@
   bottom: 0;
   right: 0;
   justify-self: end;
+}
+
+.testimonialSection {
+  margin-top: 96px;
+  text-align: center;
+}
+
+.offerHeader {
+  font-size: 2em;
+  margin-bottom: 48px;
+}
+
+.offerSpan {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.testimonialContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--btn);
+  max-width: 1216px;
+  margin-inline: auto;
+  border-radius: 20px;
+  border: 1px solid var(--btn);
+  background: #e6e6ff;
+  justify-content: center;
+  padding: 40px;
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+
+.testimonialContents {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+  gap: 2em;
+}
+
+.testimonialTextContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.clientCompany {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: var(--text-Font-Black);
+}
+
+.feedbacks {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.18px;
+  text-transform: capitalize;
+  margin: 24px 0;
+  text-align: left;
+  font-family: var(--text-Font-Bold);
+}
+
+.testifierName,
+.role {
+  font-size: 0.9em;
+  color: var(--blueText);
+}
+
+.testifierName {
+  font-family: var(--text-Font-Bold);
+}
+
+.groupImg {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.testimonialButtonDirection {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btnPrev,
+.btnNext {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.testimonialContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.testimonialContainer.fade {
+  opacity: 0;
 }
