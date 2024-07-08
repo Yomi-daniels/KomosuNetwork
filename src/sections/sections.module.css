@@ -314,9 +314,12 @@
 .subContent {
   width: 50%;
   text-align: center;
-  margin-top: 0.7rem;
-  line-height: 1.5;
-  font-size: 1.2rem;
+  line-height: 150%;
+  margin-top: 1.5rem;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  font-family: var(--textFontRegular);
 }
 
 .servicesContainer {
@@ -406,8 +409,12 @@
 }
 
 .containerFlexp {
-  line-height: 1.4;
-  font-size: 1.1rem;
+  line-height: 150%;
+  margin-top: 1.5rem;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  font-family: var(--textFontRegular);
 }
 .flexImgAbsolute {
   position: relative;
