@@ -368,7 +368,7 @@
   height: 50%;
   background-color: rgb(255, 255, 255);
   display: flex;
-  gap: 24px;
+  gap: 32px;
 }
 
 .containerFlex1,
@@ -636,7 +636,7 @@
   min-height: 100vh;
   position: relative;
   margin-inline: auto;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .offerHeader {
@@ -929,7 +929,7 @@
   background-color: var(--blueText);
   width: 100%;
   min-height: 100vh;
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 
 .offerAnimHeaderContent {
@@ -1297,7 +1297,7 @@
 
 /* FAQ SECTION */
 .FAQSection {
-  margin-top: 3rem;
+  margin-top: 6rem;
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -1327,7 +1327,7 @@
   max-width: 1250px;
   height: 100%;
   margin: 0 auto;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -1416,13 +1416,13 @@
 }
 
 .testimonialSection {
-  margin-top: 96px;
+  margin-top: 6rem;
   text-align: center;
 }
 
 .offerHeader {
   font-size: 2em;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .offerSpan {
