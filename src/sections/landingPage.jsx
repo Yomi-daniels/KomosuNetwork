@@ -62,7 +62,7 @@ const LandingPage = () => {
       </div>
 
       <div className={styles.HeroText}>
-        <p className={styles.heroSub}>Grow and expand your business with</p>
+        <p className={styles.heroSub}>GROW AND EXPAND YOUR BUSINESS WITH</p>
         <h1 className={styles.heroHeader}>
           <span className={styles.heroSpan}>KOMOSU</span> NETWORK
         </h1>
