@@ -25,13 +25,11 @@ const Navbar = () => {
             <Image src="/logo.png" alt="logo" fill />
           </div>
         </Link>
-        <div>
+        <div className={NavBarstyles.navbar}>
           <Links />
         </div>
       </div>
-      
     </div>
-    
   );
 };
 

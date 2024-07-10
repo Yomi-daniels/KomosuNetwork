@@ -28,8 +28,8 @@
 .contactLocations {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  margin-top: 3rem;
+  gap: 1.5em;
+  margin-top: 1.5rem;
   color: var(--blueText);
 }
 
@@ -37,6 +37,17 @@
   display: flex;
   align-items: center;
   gap: 1em;
+}
+
+.contactLocations a,
+.contactLocations address {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  font-family: var(--text-Font-Regular);
 }
 
 .socialLink {
@@ -50,7 +61,7 @@
   color: #fff;
   background-color: var(--btn);
   padding: 0.7rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   border-radius: 10px;
   transition: 0.5s ease-in;
 }

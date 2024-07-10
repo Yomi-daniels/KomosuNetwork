@@ -22,7 +22,7 @@ const MeetOurTeamSection = () => {
           <p>Discover the brains behind our success - Get to know them</p>
         </div>
         <div className={aboutstyles.teamContainer}>
-          <div className={aboutstyles.team}>
+          <div className={`${aboutstyles.team} ${aboutstyles.team1}`}>
             <div className={aboutstyles.teamImage}>
               <Image
                 src="/team1.png"

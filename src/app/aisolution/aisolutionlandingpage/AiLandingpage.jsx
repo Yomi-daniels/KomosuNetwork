@@ -1,38 +1,55 @@
-import Aistyles from "../Aisolution.module.css"
+"use client";
+import Aistyles from "../Aisolution.module.css";
 import Image from "next/image";
 import LandingPageButtons from "@/app/webdesign/components/LandingPageButtons";
+import { Montserrat } from "next/font/google";
+import { ScrollParallax } from "react-just-parallax";
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["700"],
+});
 const AiLandingpage = () => {
-  return <section className={Aistyles.AiLandingPage}>
-  <div className={Aistyles.vectorImgtop}>
-    <Image src="/yellow vector.png" fill/>
-  </div>
-    <div className={Aistyles.ailandingpageContainer}>
+  return (
+    <section className={Aistyles.AiLandingPage}>
+      <div className={Aistyles.vectorImgtop}>
+        <Image src="/yellow vector.png" fill />
+      </div>
+      <div
+        className={`${Aistyles.ailandingpageContainer} ${montserrat.className}`}
+      >
         <div className={Aistyles.ailandingpageContainerTextContent}>
-            <div className={Aistyles.AiLandingPageHeader}>
-                <div className={Aistyles.aiheaderImg}>
-                    <Image src="/ai vector.png" fill/>
-                </div>
-                <h4>AI SOLUTIONS</h4>
+          <div className={Aistyles.AiLandingPageHeader}>
+            <div className={Aistyles.aiheaderImg}>
+              <Image src="/ai vector.png" fill />
             </div>
-            <h2>Accelerate your business with auto-pilot efficiency sponsored by our AI-powered Chatbot</h2>
-            <LandingPageButtons/>
+            <h4>AI SOLUTIONS</h4>
+          </div>
+          <h2>
+            Accelerate your business with auto-pilot efficiency sponsored by our
+            AI-powered Chatbot
+          </h2>
+          <LandingPageButtons />
         </div>
         <div className={Aistyles.ailandingpageImage}>
-        <div className={Aistyles.ailandingpageImagetop}>
-            <Image src="/Bot.png" fill objectFit="contain"/>
-        </div>
-            <div className={Aistyles.aigirlImg}>
-                <Image src="/Ai girl.png" fill objectFit="contain"/>
+          <ScrollParallax isAbsolutelyPositioned>
+            <div className={Aistyles.ailandingpageImagetop}>
+              <Image src="/Bot.png" fill objectFit="contain" />
             </div>
+          </ScrollParallax>
+
+          <div className={Aistyles.aigirlImg}>
+            <Image src="/Ai girl.png" fill objectFit="contain" />
+          </div>
+
+          <ScrollParallax isAbsolutelyPositioned>
             <div className={Aistyles.ailandingpageImagebottom}>
-            <Image src="/Frame 126 (1).png" fill objectFit="contain"/>
+              <Image src="/Frame 126 (1).png" fill objectFit="contain" />
+            </div>
+          </ScrollParallax>
         </div>
-        </div>
-    </div>
-    <div className={Aistyles.vectorImgbottom}>
-    <Image src="/yellow vector.png" fill/>
-  </div>
-  </section>;
+      </div>
+    </section>
+  );
 };
 
 export default AiLandingpage;

@@ -15,16 +15,6 @@ const Servicesflex = () => {
               techniques with strategic planning to elevate online presence and
               drive sales.
             </p>
-            <div className={styles.flexabsoluteImg}>
-              <div className={styles.flexImgAbsolute}>
-                <Image src="/Rectangle 21.png" alt="servicesImg" fill />
-              </div>
-            </div>
-            <div className={styles.flexabsoluteImg2}>
-              <div className={styles.flexImgAbsolute2}>
-                <Image src="/Rectangle 19.png" alt="servicesImg" fill />
-              </div>
-            </div>
           </div>
           <div className={styles.containerFlex1}>
             <div className={styles.flexImg}>
@@ -51,12 +41,6 @@ const Servicesflex = () => {
               combining content marketing and chatbot to boost sales and
               conversions.
             </p>
-
-            <div className={styles.flexabsoluteImg2}>
-              <div className={styles.flexImgAbsolute2}>
-                <Image src="/Rectangle 19 (1).png" alt="servicesImg" fill />
-              </div>
-            </div>
           </div>
 
           <div className={styles.containerSubFlex1}>

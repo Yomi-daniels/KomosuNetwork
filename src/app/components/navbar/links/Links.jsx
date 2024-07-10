@@ -20,11 +20,11 @@ const links = [
       },
       {
         title: "Content Marketing",
-        path: "contentmarketing",
+        path: "/contentmarketing",
       },
       {
         title: "Lead Generation",
-        path: "leadgeneration",
+        path: "/leadgeneration",
       },
     ],
   },
@@ -85,17 +85,12 @@ const Links = () => {
           </div>
         ))}
       </div>
-      {/* <button
+      <button
         onClick={() => setOpen((prev) => !prev)}
         className={styles.menuButton}
       >
-        <Image
-          src="/arrow-drop-down-line.svg"
-          alt="menu"
-          width={24}
-          height={24}
-        />
-      </button> */}
+        <Image src="/menu-3-fill.svg" alt="menu" width={24} height={24} />
+      </button>
       {open && (
         <div className={styles.mobileContainer}>
           <div className={styles.mobileLinks}>

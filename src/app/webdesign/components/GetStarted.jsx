@@ -1,8 +1,11 @@
 import webstyle from "../webdesign.module.css";
+import Link from "next/link";
 const GetStarted = () => {
   return (
     <div className={webstyle.webdesignTextContent}>
-      <button>Get Started</button>
+      <Link href="/request-demo">
+        <button>Get Started</button>
+      </Link>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./sections.module.css";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import Link from "next/link";
 // import { Montserrat } from "next/font/google";
 // const montserratFont = Montserrat({
 //   subsets: ["latin"],
@@ -75,14 +76,16 @@ const LandingPage = () => {
         <h1 className={styles.heroHeader}>
           <span className={styles.heroSpan}>KOMOSU</span> NETWORK
         </h1>
-        <button className={styles.headerbtn}>
-          Learn more
-          <div className={styles.buttonImageBg}>
-            <div className={styles.buttonImage}>
-              <Image src="/Vector.png" alt="vector" fill />
+        <Link href="/about">
+          <button className={styles.headerbtn}>
+            Learn more
+            <div className={styles.buttonImageBg}>
+              <div className={styles.buttonImage}>
+                <Image src="/Vector.png" alt="vector" fill />
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </Link>
       </div>
       <div className={styles.HeaderContent}>
         <p className={styles.heroSubText}>

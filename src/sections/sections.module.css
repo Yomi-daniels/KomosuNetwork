@@ -41,6 +41,7 @@
   height: 100%;
   margin-inline: auto;
   border-radius: 36px;
+
   overflow: hidden;
   padding-left: 64px; 
 } */
@@ -55,8 +56,12 @@
     rgba(0, 0, 0, 0.24) -1.53%,
     rgba(0, 0, 0, 0.6) 93.64%
   );
-
   backdrop-filter: blur(50px);
+  border-radius: 36px;
+}
+
+.heroImg img {
+  border-radius: inherit;
 }
 
 .HeroText {
@@ -66,9 +71,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  left: 5%;
+  left: 0;
   color: var(--text);
   padding-left: 7rem;
+  margin-left: 148px;
   width: 1120px;
 }
 
@@ -76,6 +82,7 @@
   color: var(--text);
   font-size: 1rem;
   font-weight: light;
+  text-transform: uppercase;
 }
 
 .heroImg::before {
@@ -131,8 +138,8 @@
 
 .buttonImage {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border-radius: 50px;
 }
 
@@ -153,7 +160,8 @@
 .HeaderContent {
   position: absolute;
   bottom: 3%;
-  left: 5%;
+  left: 0;
+  margin-left: 148px;
   color: #fff;
   padding: 0 7rem;
   z-index: 100;
@@ -258,7 +266,7 @@
   height: 100%;
   background-color: #ffffff;
   color: #000000;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 .ServicesTextContainer {
@@ -294,7 +302,7 @@
 
 .servicesHeader h2,
 .offerHeader {
-  font-size: 32px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 48px */
@@ -307,14 +315,18 @@
 .servicesSpan {
   color: var(--yellow);
   font-style: italic;
+  font-size: 40px;
 }
 
 .subContent {
   width: 50%;
   text-align: center;
-  margin-top: 0.7rem;
-  line-height: 1.5;
-  font-size: 1.2rem;
+  line-height: 150%;
+  margin-top: 1.5rem;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  font-family: var(--textFontRegular);
 }
 
 .servicesContainer {
@@ -343,14 +355,16 @@
   justify-content: center;
   gap: 1em;
   color: var(--blueText);
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   cursor: pointer;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .servicesLastContentText p {
   color: inherit;
   font-weight: 500;
+  font-size: 18px;
+  color: var(--btn);
 }
 
 .containerflex,
@@ -360,7 +374,7 @@
   height: 50%;
   background-color: rgb(255, 255, 255);
   display: flex;
-  gap: 24px;
+  gap: 32px;
 }
 
 .containerFlex1,
@@ -404,8 +418,12 @@
 }
 
 .containerFlexp {
-  line-height: 1.4;
-  font-size: 1.1rem;
+  line-height: 150%;
+  margin-top: 1.5rem;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  font-family: var(--textFontRegular);
 }
 .flexImgAbsolute {
   position: relative;
@@ -624,7 +642,7 @@
   min-height: 100vh;
   position: relative;
   margin-inline: auto;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .offerHeader {
@@ -871,13 +889,53 @@
   width: 558px;
 }
 
+.OfferOfferContentContainer {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.section {
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+.section.fadeIn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.section.fadeOut {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.webDesignContainer,
+.aiSolution,
+.contentMarketing,
+.leadGeneration {
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+.webDesignContainer.active,
+.aiSolution.active,
+.contentMarketing.active,
+.leadGeneration.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* OFFER ANIMATION SECTION */
 
 .OfferAnimationSection {
   background-color: var(--blueText);
   width: 100%;
   min-height: 100vh;
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 
 .offerAnimHeaderContent {
@@ -1181,7 +1239,7 @@
 }
 .avatar {
   position: relative;
-  min-width: 340px;
+  width: 340px;
   height: 400px;
 }
 .testimonialTextContent {
@@ -1237,7 +1295,7 @@
 .testimonialbuttonDirection {
   display: flex;
   align-items: center;
-  gap: 2em;
+  gap: 2.5em;
   position: absolute;
   right: 8%;
   bottom: 0;
@@ -1245,7 +1303,7 @@
 
 /* FAQ SECTION */
 .FAQSection {
-  margin-top: 3rem;
+  margin-top: 6rem;
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -1275,7 +1333,7 @@
   max-width: 1250px;
   height: 100%;
   margin: 0 auto;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -1301,9 +1359,43 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  border-radius: 10px;
+  /* padding: 1rem 1.5rem; */
+  height: 100%;
+}
+
+.FAQContainerContents {
+  flex-direction: column;
+  display: flex;
+  cursor: pointer;
   border: 1px solid#DAD9FF;
   border-radius: 10px;
   padding: 1rem 1.5rem;
+  height: 100%;
+}
+
+.FAQAnswer {
+  border-top: 1px solid#DAD9FF;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  /* display: none; */
+}
+
+.FAQAnswer {
+  display: none;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+.FAQAnswer.expanded {
+  display: block;
+  max-height: 200px; /* Adjust this value according to your content height */
+  opacity: 1;
 }
 
 .FAQContents h4 {
@@ -1327,4 +1419,110 @@
   bottom: 0;
   right: 0;
   justify-self: end;
+}
+
+.testimonialSection {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.offerHeader {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.offerSpan {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.testimonialContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--btn);
+  max-width: 1216px;
+  margin-inline: auto;
+  border-radius: 20px;
+  border: 1px solid var(--btn);
+  background: #e6e6ff;
+  justify-content: center;
+  padding: 40px;
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+
+.testimonialContents {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+  gap: 2em;
+}
+
+.testimonialTextContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.clientCompany {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: var(--text-Font-Black);
+}
+
+.feedbacks {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.18px;
+  text-transform: capitalize;
+  margin: 24px 0;
+  text-align: left;
+  font-family: var(--text-Font-Bold);
+}
+
+.testifierName,
+.role {
+  font-size: 0.9em;
+  color: var(--blueText);
+}
+
+.testifierName {
+  font-family: var(--text-Font-Bold);
+}
+
+.groupImg {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.testimonialButtonDirection {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btnPrev,
+.btnNext {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.testimonialContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.testimonialContainer.fade {
+  opacity: 0;
 }

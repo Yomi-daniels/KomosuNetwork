@@ -6,6 +6,7 @@
   width: 100%;
   min-height: 100vh;
   position: relative;
+  margin-top: 6rem;
 }
 
 .pricingLandingPageContainer {
@@ -58,11 +59,11 @@
 }
 
 .pricingLandingPageContainer {
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 .pricingLandingPageContainerContent {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .pricingContentWrapper {
@@ -73,7 +74,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 4px;
 }
 
 .pricingLandingPageContainerHeader h4 {
@@ -84,6 +85,7 @@
   letter-spacing: 0.48px;
   text-transform: capitalize;
   color: var(--blueText);
+  font-family: var(--text-Font-Bold);
 }
 
 .pricingLandingPageContainerHeader p {
@@ -114,6 +116,16 @@
   gap: 1.5em;
 }
 
+.arrowWrapper h4 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.48px;
+  text-transform: capitalize;
+  font-family: var(--text-Font-Bold);
+}
+
 .pricingContentImgBg {
   background-color: var(--btn);
   width: 24px;
@@ -139,6 +151,16 @@
   border: 1px solid #dad9ff;
   color: var(--blueText);
   transition: 0.4s ease;
+}
+
+.pricingContent h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.18px;
+  text-transform: capitalize;
+  font-family: var(--text-Font-Bold);
 }
 
 .pricingContent:hover {

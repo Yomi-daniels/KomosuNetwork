@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 100vh;
   /* border: 2px solid red; */
-  margin-top: 5.6rem;
+  margin-top: 6rem;
 }
 
 /* AI SOLUTIONS LANDING PAGE SECTION */
@@ -16,6 +16,7 @@
   align-items: end;
   position: relative;
   overflow-y: hidden;
+  padding: 0 6rem;
 }
 
 .vectorImgtop {
@@ -65,7 +66,7 @@
 .ailandingpageContainer h2 {
   font-size: 48px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 120%; /* 57.6px */
   letter-spacing: -0.48px;
   color: var(--blueText);
@@ -98,7 +99,7 @@
   object-fit: contain;
   bottom: 10%;
   left: 10%;
-  z-index: 10;
+  z-index: 100;
 }
 
 /* AI SOLUTION SERVICES SECTION */
@@ -106,12 +107,17 @@
 .AisolutionServicesSection {
   width: 100%;
   min-height: 100vh;
+  margin-top: 6rem;
 }
 
 .AisolutionServicesContainer {
-  max-width: 1300px;
+  max-width: 1120px;
   height: 100%;
   margin-inline: auto;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .AisolutionServicesText h3 {
@@ -120,15 +126,16 @@
   font-weight: 700;
   line-height: 120%; /* 48px */
   letter-spacing: -0.4px;
-  width: 80%;
+  align-self: stretch;
   color: var(--blueText);
   margin-bottom: 1rem;
+  font-family: var(--text-Font-Bold);
 }
 
 .aiservicesImg {
   position: relative;
   width: 478px;
-  height: 603px;
+  height: 403px;
 }
 
 .AisolutionServicesContent {
