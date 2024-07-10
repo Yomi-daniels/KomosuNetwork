@@ -633,7 +633,7 @@
 
 .OfferSection {
   max-width: 1250px;
-  min-height: 100vh;
+  height: 100%;
   position: relative;
   margin-inline: auto;
   margin-top: 6rem;
@@ -1299,7 +1299,7 @@
 .FAQSection {
   margin-top: 6rem;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   position: relative;
 }
 .servicesSubTextContainer {

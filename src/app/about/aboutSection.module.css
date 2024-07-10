@@ -191,7 +191,7 @@
 
 .MeetOurTeamContainer {
   max-width: 1120px;
-  min-height: 100vh;
+  height: 100%;
   margin-inline: auto;
 }
 

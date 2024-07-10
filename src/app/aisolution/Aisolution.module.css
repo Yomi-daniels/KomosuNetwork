@@ -10,7 +10,7 @@
 .AiLandingPage {
   background-color: var(--hover2);
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: end;
   align-items: end;

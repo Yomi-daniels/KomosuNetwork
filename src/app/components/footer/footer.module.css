@@ -1,16 +1,18 @@
 .FooterSection {
   max-width: 100%;
-  min-height: 90vh;
+  height: 100%;
   position: relative;
+  margin-top: 6rem;
+  background-color: var(--blueText);
 }
 
 .FooterContainer {
   max-width: 1316px;
-  height: 603px;
+  height: 100%;
   margin-inline: auto;
-  background-color: var(--blueText);
+
   border-radius: 36px;
-  padding: 3rem 2.8rem;
+  padding: 6rem 2.8rem;
   position: relative;
   color: white;
   font-size: 18px;
@@ -27,7 +29,11 @@
 
 .footerHeader {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0;
+  background: #020073;
+  color: #fff;
 }
 
 .footerHeader h1 {

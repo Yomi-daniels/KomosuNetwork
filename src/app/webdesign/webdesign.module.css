@@ -5,13 +5,13 @@
 .webdesignLandingPage {
   position: relative;
   width: 100%;
-  min-height: 90vh;
+  height: 100%;
   background-color: var(--hover1);
   display: flex;
   justify-content: center;
   align-items: flex-start;
   overflow: hidden;
-  padding: 0 96px;
+  padding: 130px 96px;
 }
 
 .webdesignLandingPageContainer {
