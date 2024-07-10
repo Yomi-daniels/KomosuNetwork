@@ -69,39 +69,6 @@
   color: var(--yellow);
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-}
-
-.fullname {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-
-.fullname input {
-  color: var(--blueText);
-  border-radius: 8px;
-  border: 1px solid #bcbcbc;
-  width: 283px;
-  height: 50px;
-  padding: 8px 12px;
-  margin-bottom: 3rem;
-  outline: none;
-}
-
-.fullname input:focus {
-  border: 1px solid var(--btn);
-}
-
-.fullname input::placeholder {
-  color: var(--blueText);
-}
-
-.inputs input::placeholder {
-  color: var(--blueText);
-}
 .contactForm input {
   color: var(--blueText);
   display: flex;
@@ -112,38 +79,6 @@
   align-self: stretch;
   border-radius: 8px;
   border: 1px solid #bcbcbc;
-}
-.inputs {
-  color: var(--blueText);
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
-  align-items: center;
-  outline: none;
-}
-
-.inputs input:focus {
-  border: 1px solid var(--btn);
-}
-
-.textarea {
-  width: 590px;
-  padding: 8px 12px;
-  border-radius: 10px;
-  color: var(--blueText);
-  outline: none;
-}
-
-.textarea textarea:focus {
-  border: 1px solid var(--btn);
-}
-
-.textarea::placeholder {
-  color: var(--blueText);
-}
-
-.form input {
-  outline: none;
 }
 
 .contactForm button {

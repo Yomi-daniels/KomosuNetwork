@@ -1,0 +1,99 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.fullname {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 3rem 0;
+}
+
+.fullname input {
+  color: var(--blueText);
+  border-radius: 8px;
+  border: 1px solid #bcbcbc;
+  width: 283px;
+  height: 50px;
+  padding: 8px 12px;
+
+  outline: none;
+}
+
+.fullname input:focus {
+  border: 1px solid var(--btn);
+}
+
+.fullname input::placeholder {
+  color: var(--blueText);
+}
+
+.inputs input::placeholder {
+  color: var(--blueText);
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.inputs {
+  color: var(--blueText);
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  outline: none;
+}
+
+.inputs input:focus {
+  border: 1px solid var(--btn);
+}
+
+.textarea {
+  width: 590px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: var(--blueText);
+  outline: none;
+}
+
+.textarea textarea:focus {
+  border: 1px solid var(--btn);
+}
+
+.textarea::placeholder {
+  color: var(--blueText);
+}
+
+.form input {
+  outline: none;
+}
+
+.contactForm button {
+  display: flex;
+  width: 590px;
+  height: 50px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  background-color: var(--btn);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.12rem;
+  font-weight: 700;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.contactForm button:hover {
+  background-color: var(--blueText);
+  color: var(--yellow);
+}
+
+.errorText {
+  color: red;
+  font-size: 12px;
+  margin: 6px 0 0 6px;
+}

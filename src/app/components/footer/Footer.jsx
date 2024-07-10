@@ -32,7 +32,7 @@ const Footer = () => {
               <Link href="/servicesLink">Services</Link>
               <Link href="/pricing">Pricing</Link>
               <Link href="/contact">Contact</Link>
-              <Link href="/request-demo">Request Demo</Link>
+              <Link href="/requestDemo">Request Demo</Link>
             </div>
             <div className={styles.TermsCondition}>
               <p>Terms & Conditions</p>

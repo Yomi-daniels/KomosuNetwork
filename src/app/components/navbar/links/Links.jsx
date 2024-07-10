@@ -38,7 +38,7 @@ const links = [
   },
   {
     title: "Request Demo",
-    path: "/request-demo",
+    path: "/requestdemo",
   },
 ];
 

@@ -55,19 +55,24 @@ const LandingPage = () => {
   return (
     <section className={styles.heroSection}>
       <div className={styles.heroContainer}>
-        <div className={styles.heroImg}>
+        {/* <div className={styles.heroImg}>
           <Image src="/landing image.png" layout="fill" objectFit="cover"/>
-        </div>
+        </div> */}
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className={styles.heroVideo}
+        >
+          <source src="/landingVid.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <div className={styles.HeroText}>
-      <p className={styles.heroSub}>
-        Grow and expand your business with
-      </p>
-      <h1
-          className={styles.heroHeader}
-         
-        >
+        <p className={styles.heroSub}>Grow and expand your business with</p>
+        <h1 className={styles.heroHeader}>
           <span className={styles.heroSpan}>KOMOSU</span> NETWORK
         </h1>
         <button className={styles.headerbtn}>
@@ -86,9 +91,7 @@ const LandingPage = () => {
           impressions through content marketing and lead generations.
         </p>
       </div>
-
     </section>
-
   );
 };
 

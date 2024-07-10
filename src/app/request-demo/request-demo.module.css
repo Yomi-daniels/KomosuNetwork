@@ -112,14 +112,29 @@
   box-shadow: 0px 8px 16px 0px rgba(40, 40, 43, 0.2);
 }
 
-.fullname,
 .inputflex {
   display: flex;
   align-items: flex-start;
   gap: 24px;
 }
-
-.fullname input,
+.formGroup {
+  display: flex;
+  gap: 0.5em;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.name input {
+  height: 50px;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid #bcbcbc;
+}
 .inputflex input {
   display: flex;
   height: 50px;
@@ -178,7 +193,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  display: flex;
   height: 50px;
   padding: 8px 12px;
   align-items: center;
@@ -187,6 +201,7 @@
   border-radius: 8px;
   border: 1px solid #bcbcbc;
   position: relative;
+  width: 100%;
 }
 
 .planContainer i {
