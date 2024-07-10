@@ -4,45 +4,57 @@
   font-family: var(--textFontRegular);
 }
 
-/* .heroSection {
-  color: black;
-  position: relative;
-  max-width: 1316px;
-  height: 100vh;
-  line-height: 1.3;
-  border: 4px solid red;
-}
-
-.HeroImgBg {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  pointer-events: none;
-} */
-
 .heroSection {
+  position: relative;
   max-width: 100%;
   height: 100vh;
   margin-top: 6rem;
-  /* padding: 48px 0px; */
 }
 
 .heroContainer {
-  position: relative;
-  max-width: 1316px;
-  height: 100%;
-  margin-inline: auto;
-  border-radius: 36px;
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+}
 
-  overflow: hidden;
-  /* padding: 0 3rem; */
-  /* margin-left: 6rem; */
+.HeroTextContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.HeroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--text);
+  margin-left: 6rem;
+  max-width: 514px;
+}
+
+.HeaderContent {
+  color: #fff;
+  z-index: 100;
+  max-width: 480px;
+  margin-right: 6rem;
+}
+
+.heroSubText {
+  color: var(--White, #fff);
+  text-align: right;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  text-align: right;
 }
 
 .heroImg {
   position: relative;
-  width: 1316px;
+  max-width: 100%;
   object-fit: cover;
   height: 100%;
   background: linear-gradient(
@@ -51,25 +63,7 @@
     rgba(0, 0, 0, 0.6) 93.64%
   );
   backdrop-filter: blur(50px);
-  border-radius: 36px;
-}
-
-.heroImg img {
-  border-radius: inherit;
-}
-
-.HeroText {
-  position: absolute;
-  top: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  left: 0;
-  color: var(--text);
-  padding-left: 7rem;
-  margin-left: 148px;
-  width: 1120px;
+  /* border-radius: 36px; */
 }
 
 .heroSub {
@@ -107,11 +101,15 @@
   padding: 0.9rem 1.3rem;
   color: var(--btn);
   display: flex;
+  height: 50px;
+  padding: 8px 12px;
+  justify-content: center;
   align-items: center;
+  gap: 8px;
   justify-content: space-between;
-  gap: 1em;
+  font-family: var(--text-Font-Bold);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 1rem;
   border: none;
   cursor: pointer;
@@ -139,36 +137,16 @@
 
 .heroHeader {
   color: var(--text);
-  font-size: 64px;
+  font-size: 36px;
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.28px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.36px;
   font-family: var(--text-Font-Black);
 }
 
 .heroSpan {
-  color: var(--btn);
-}
-
-.HeaderContent {
-  position: absolute;
-  bottom: 3%;
-  left: 0;
-  margin-left: 148px;
-  color: #fff;
-  padding: 0 7rem;
-  z-index: 100;
-}
-
-.heroSubText {
-  width: 40%;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 27px */
-  letter-spacing: 0.18px;
-  text-transform: capitalize;
+  color: var(--yellow);
 }
 
 @media (min-width: 1628px) {
@@ -722,6 +700,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.AisolutionContainer .webDesignCard {
+  width: 435px;
+  height: 549px;
+  flex-shrink: 0;
+}
+
+.contentMarketingContainer .webDesignCard {
+  width: 693px;
+  height: 563.915px;
 }
 
 .webDesignCard {

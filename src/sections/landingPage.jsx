@@ -5,15 +5,11 @@ import styles from "./sections.module.css";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Link from "next/link";
-// import { Montserrat } from "next/font/google";
-// const montserratFont = Montserrat({
-//   subsets: ["latin"],
-//   weight: ["900"],
-// });
-// import localFont from 'next/font/local';
-// const satoshiFont = localFont({
-//   src: '/fonts/Satoshi-Regular.otf'
-// });
+import { Shadows_Into_Light } from "next/font/google";
+const shadowFont = Shadows_Into_Light({
+  subsets: ['latin'],
+  weight:['400']
+})
 
 const LandingPage = () => {
   const videoRef = useRef(null);
@@ -55,34 +51,34 @@ const LandingPage = () => {
 
   return (
     <section className={styles.heroSection}>
+      <div className={styles.heroImg}>
+        <Image src="/landing image.png" layout="fill" objectFit="cover" />
+      </div>
       <div className={styles.heroContainer}>
-        <div className={styles.heroImg}>
-          <Image src="/landing image.png" layout="fill" objectFit="cover" />
+        <div className={styles.HeroTextContainer}>
+          <div className={styles.HeroText}>
+          
+            <h1 className={styles.heroHeader}>
+            Transform your <span className={`${styles.heroSpan} ${shadowFont.className}`}> dealership </span> with Komosu Network
+            </h1>
+            <Link href="/about">
+              <button className={styles.headerbtn}>
+                Learn more
+          
+                  <div className={styles.buttonImage}>
+                    <Image src="/View plan button (4).png" alt="vector" fill />
+                  </div>
+              </button>
+            </Link>
+          </div>
+          <div className={styles.HeaderContent}>
+            <p className={styles.heroSubText}>
+              Our team of experts will help provide long lasting solutions for
+              your business through web design, AI Solutions, and other high
+              quality impressions through content marketing and lead generations.
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.HeroText}>
-        <p className={styles.heroSub}>GROW AND EXPAND YOUR BUSINESS WITH</p>
-        <h1 className={styles.heroHeader}>
-          <span className={styles.heroSpan}>KOMOSU</span> NETWORK
-        </h1>
-        <Link href="/about">
-          <button className={styles.headerbtn}>
-            Learn more
-            <div className={styles.buttonImageBg}>
-              <div className={styles.buttonImage}>
-                <Image src="/Vector.png" alt="vector" fill />
-              </div>
-            </div>
-          </button>
-        </Link>
-      </div>
-      <div className={styles.HeaderContent}>
-        <p className={styles.heroSubText}>
-          Our team of experts will help provide long lasting solutions for your
-          business through web design, AI Solutions, and other high quality
-          impressions through content marketing and lead generations.
-        </p>
       </div>
     </section>
   );

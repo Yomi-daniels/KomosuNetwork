@@ -247,21 +247,14 @@ const Offer = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.webDesignCardContainer}>
+                <div
+                  className={`${styles.webDesignCardContainer} ${styles.AisolutionContainer}`}
+                >
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
                   >
                     <Image
-                      src="/New Macbook Pro Mockup Front View.png"
-                      fill
-                      objectFit="contain"
-                    />
-                  </div>
-                  <div
-                    className={`${styles.webDesignCard} ${styles.webDesignCard2}`}
-                  >
-                    <Image
-                      src="/Pixel 8 Pro Mockup Obsidian.png"
+                      src="/Frame 1618868477.png"
                       fill
                       objectFit="contain"
                     />
@@ -357,21 +350,14 @@ const Offer = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.webDesignCardContainer}>
+                <div
+                  className={`${styles.webDesignCardContainer} ${styles.contentMarketingContainer}`}
+                >
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
                   >
                     <Image
-                      src="/New Macbook Pro Mockup Front View.png"
-                      fill
-                      objectFit="contain"
-                    />
-                  </div>
-                  <div
-                    className={`${styles.webDesignCard} ${styles.webDesignCard2}`}
-                  >
-                    <Image
-                      src="/Pixel 8 Pro Mockup Obsidian.png"
+                      src="/Frame 1618868648.png"
                       fill
                       objectFit="contain"
                     />
