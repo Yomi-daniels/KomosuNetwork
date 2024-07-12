@@ -151,10 +151,10 @@
 
 @media (min-width: 1628px) {
   .HeroText {
-    left: 15%;
+    margin-left: 12rem;
   }
   .HeaderContent {
-    left: 15%;
+    margin-right: 12rem;
   }
 }
 
@@ -738,6 +738,15 @@
   width: 200.438px;
   height: 330.293px;
   top: 60%;
+}
+
+.webDesignCard3 {
+  width: 693px;
+  height: 563.915px;
+  position: relative;
+  margin-right: 40px;
+  /* scale: 1; */
+  /* border: 3px solid red; */
 }
 
 .webDesignCardContainer1 .webDesignCard2::after {
@@ -1508,4 +1517,22 @@
 
 .testimonialContainer.fade {
   opacity: 0;
+}
+/* 
+.section {
+  height: 100vh;
+  padding: 2rem;
+} */
+
+.landingPage {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ServicesPage,
+.VideoShowcasePage,
+.OfferPage,
+.OfferAnimationPage,
+.TestimonialPage,
+.FAQPage {
+  background-color: white;
 }

@@ -357,7 +357,7 @@ const Offer = () => {
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
                   >
                     <Image
-                      src="/Frame 1618868648.png"
+                      src="/content marketing girl.png"
                       fill
                       objectFit="contain"
                     />
@@ -455,22 +455,9 @@ const Offer = () => {
                 </div>
                 <div className={styles.webDesignCardContainer}>
                   <div
-                    className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
+                    className={`${styles.webDesignCard} ${styles.webDesignCard3}`}
                   >
-                    <Image
-                      src="/New Macbook Pro Mockup Front View.png"
-                      fill
-                      objectFit="contain"
-                    />
-                  </div>
-                  <div
-                    className={`${styles.webDesignCard} ${styles.webDesignCard2}`}
-                  >
-                    <Image
-                      src="/Pixel 8 Pro Mockup Obsidian.png"
-                      fill
-                      objectFit="contain"
-                    />
+                    <Image src="/Frame 1618868648.png" fill objectFit="cover" />
                   </div>
                 </div>
               </div>
