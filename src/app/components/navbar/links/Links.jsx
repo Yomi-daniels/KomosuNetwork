@@ -28,10 +28,17 @@ const links = [
       },
     ],
   },
+
   // {
   //   title: "Pricing",
   //   path: "/pricing",
   // },
+
+  {
+    title: "case study",
+    path: "/case-study",
+  },
+
   {
     title: "Contact",
     path: "/contact",
