@@ -4,9 +4,9 @@ import Link from "next/link";
 const LandingPageButtons = () => {
   return (
     <div className={webstyle.buttonContainer}>
-      <Link href="/pricing">
+      {/* <Link href="/pricing">
         <button className={webstyle.pricingbtn}>See Pricing</button>
-      </Link>
+      </Link> */}
 
       <Link href="/request-demo">
         <button className={webstyle.demobtn}>

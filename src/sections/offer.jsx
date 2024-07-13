@@ -82,7 +82,7 @@ const Offer = () => {
                     stunning web design
                   </h1>
                   <Link href="/webdesign">
-                    <button className={styles.WebDesignBtn}>Get Started</button>
+                    <button className={styles.WebDesignBtn}>See More</button>
                   </Link>
                   <div className={styles.WebDesignFeatures}>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -186,7 +186,7 @@ const Offer = () => {
                     sponsored by our AI-powered Chatbot
                   </h1>
                   <Link href="/aisolution">
-                    <button className={styles.WebDesignBtn}>Get Started</button>
+                    <button className={styles.WebDesignBtn}>See More</button>
                   </Link>
                   <div className={styles.WebDesignFeatures}>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -290,7 +290,7 @@ const Offer = () => {
                     content
                   </h1>
                   <Link href="/contentmarketing">
-                    <button className={styles.WebDesignBtn}>Get Started</button>
+                    <button className={styles.WebDesignBtn}>See More</button>
                   </Link>
                   <div className={styles.WebDesignFeatures}>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -393,7 +393,7 @@ const Offer = () => {
                     strategies
                   </h1>
                   <Link href="/leadgeneration">
-                    <button className={styles.WebDesignBtn}>Get Started</button>
+                    <button className={styles.WebDesignBtn}>See More</button>
                   </Link>
                   <div className={styles.WebDesignFeatures}>
                     <div className={styles.WebDesignFeaturesContent}>

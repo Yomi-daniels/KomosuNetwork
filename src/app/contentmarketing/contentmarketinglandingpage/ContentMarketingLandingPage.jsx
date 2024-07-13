@@ -11,9 +11,9 @@ const montserrat = Montserrat({
 const ContentMarketingLandingPage = () => {
   return (
     <section className={contentStyles.contentSection}>
-      <div className={contentStyles.vectorbottom}>
+      {/* <div className={contentStyles.vectorbottom}>
         <Image src="/triangle.png" fill />
-      </div>
+      </div> */}
       <div className={contentStyles.contentContainer}>
         <div className={`${contentStyles.contentText} ${montserrat.className}`}>
           <div className={contentStyles.contentheader}>
@@ -22,31 +22,13 @@ const ContentMarketingLandingPage = () => {
             </div>
             <h4>CONTENT MARKETING</h4>
           </div>
-          <h2>
-            Fuel your brand success with tailored content marketing services
-            championed by us
-          </h2>
+          <h2>Next-Gen Content Marketing Solutions</h2>
+
+          <p>Transform your dealership's online presence with Komosu Network's next-generation content marketing services</p>
           <LandingPageButtons />
         </div>
         <div className={contentStyles.contentImages}>
-          <div className={contentStyles.firstContentImage}>
-            <div className={contentStyles.contentImg}>
-              <Image src="/Group 6.png" fill objectFit="contain" />
-            </div>
-            <div className={contentStyles.contentImg2}>
-              <Image src="/Group 6324.png" fill objectFit="contain" />
-            </div>
-          </div>
-          <div className={contentStyles.secondContentImage}>
-            <div className={contentStyles.contentImg}>
-              <Image src="/Rectangle 8 (3).png" fill objectFit="contain" />
-            </div>
-            <ScrollParallax isAbsolutelyPositioned>
-              <div className={contentStyles.contentImg2}>
-                <Image src="/Frame 139.png" fill objectFit="contain" />
-              </div>
-            </ScrollParallax>
-          </div>
+          <Image src="/content marketing girl.png" fill objectFit="contain" />
         </div>
       </div>
     </section>

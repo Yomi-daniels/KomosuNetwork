@@ -70,7 +70,7 @@
   display: flex;
   align-items: center;
   gap: 1em;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .buttonContainer .pricingbtn {

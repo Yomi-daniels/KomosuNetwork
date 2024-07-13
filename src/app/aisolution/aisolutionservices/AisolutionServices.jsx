@@ -30,6 +30,17 @@ const AisolutionServices = () => {
             <GetStarted />
           </div>
         </div>
+        <div className={Aistyles.AisolutionServicesContent}>
+          <div className={Aistyles.AisolutionServicesText}>
+            <h3>Provide real-time assistance on your dealership’s website.</h3>
+            <GetStarted />
+          </div>
+          <div className={Aistyles.AisolutionServicesImage}>
+            <div className={Aistyles.aiservicesImg}>
+              <Image src="/Frame 1618868477.png" fill objectFit="contain" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
