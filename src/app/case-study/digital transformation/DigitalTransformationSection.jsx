@@ -83,18 +83,18 @@ const DigitalTransformationSection = () => {
         <div className={casestyles.challanges}>
         <div className={casestyles.challangescontent}>
     <div className={casestyles.Tickimg}><Tickimg/></div>
-    <p>A significant increase in website traffic and lead conversion rates.</p>
+    <p>A significant increase in website traffic and lead <br /> conversion rates.</p>
         </div>
         <div className={casestyles.challangescontent}>
     <div className={casestyles.Tickimg}><Tickimg/></div>
     <p>
-    Enhanced customer satisfaction due to round-the-clock support and seamless transaction processes.
+    Enhanced customer satisfaction due to round-the-clock <br /> support and seamless transaction processes.
     </p>
         </div>
         <div className={casestyles.challangescontent}>
     <div className={casestyles.Tickimg}><Tickimg/></div>
     <p>
-    A streamlined sales process with reduced paperwork and faster closing times.
+    A streamlined sales process with reduced paperwork and <br /> faster closing times.
     </p>
         </div>
         <div className={casestyles.challangescontent}>

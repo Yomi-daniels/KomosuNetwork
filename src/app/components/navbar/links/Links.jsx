@@ -35,7 +35,7 @@ const links = [
   // },
 
   {
-    title: "case study",
+    title: "Case Study",
     path: "/case-study",
   },
 

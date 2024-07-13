@@ -25,7 +25,7 @@ const VideoShowcase = () => {
   return (
     <section className={styles.videoSection}>
       <div className={styles.videoContainer}>
-        <video ref={videoRef} className={styles.video}>
+        <video ref={videoRef} className={styles.video} controls>
           <source src="/Video.MP4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
