@@ -9,6 +9,7 @@
   height: 100%;
   margin: 0 auto;
   padding: 0 1.2rem;
+  /* border: 3px solid blue; */
 }
 
 .parentContainer {
@@ -21,6 +22,8 @@
   top: 0;
   position: fixed;
   transition: top 0.3s;
+  height: 90px;
+  /* border: 2px solid red; */
 }
 
 .hidden {
