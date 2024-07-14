@@ -17,11 +17,19 @@
   color: var(--blueText);
 }
 
+.formGroup::placeholder {
+  text-align: center;
+  align-items: center;
+}
+
 .formGroup select {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  text-align: center;
   gap: 8px;
 }
 

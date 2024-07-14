@@ -41,25 +41,12 @@ const WebDesignWorks = () => {
         </div>
       </div>
       <div className={webstyle.webdesignContentsContainer}>
-        <div className={webstyle.webdesignContent2}>
-          <div className={webstyle.webdesignimgContent}>
-            <div className={webstyle.webdesignImg}>
-              <Image src="/Frame 1618868702.png" fill objectFit="contain"/>
-            </div>
-          </div>
-          <div className={webstyle.webdesignTextContent2}>
-            <h2>Digital Interaction Enhancements</h2>
-            <p>Redefine customer interactions with innovative digital solutions. From virtual showrooms to online vehicle reservations with refundable fees, we empower your customers while reducing reliance on physical contact.</p>
-            <GetStarted />
-          </div>
-        </div>
         <div className={webstyle.webdesignContents1}>
           <div className={webstyle.webdesignTextContent}>
             <h2>
-            Integrated Payment Solutions
+              Tailored website designs that reflect your brand’s identity and
+              values.
             </h2>
-
-          <p>Seamlessly integrate secure payment gateways into your dealership's website. Enable customers to make online purchases, deposits, or reservations, transforming the transaction experience.</p>
             <GetStarted />
           </div>
           <div className={webstyle.webdesignimgContent}>
@@ -71,14 +58,14 @@ const WebDesignWorks = () => {
         <div className={webstyle.webdesignContent2}>
           <div className={webstyle.webdesignimgContent}>
             <div className={webstyle.webdesignImg}>
-              <Image src="/Frame 1618868705.png" fill />
+              <Image src="/Rectangle 63 (1).png" fill />
             </div>
           </div>
           <div className={webstyle.webdesignTextContent2}>
             <h2>
-            Customized User Experience
+              Tailored website designs that reflect your brand's identity and
+              values.
             </h2>
-            <p>Tailor-made web interfaces designed for intuitive navigation and engagement. Whether browsing inventory, scheduling services, or seeking information, our designs prioritize user-friendliness.</p>
             <GetStarted />
           </div>
         </div>

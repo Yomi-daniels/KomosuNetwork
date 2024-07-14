@@ -52,49 +52,39 @@ const LandingPage = () => {
   return (
     <section className={styles.heroSection}>
       <div className={styles.herobg}>
-        {/* <Image src="/landing image.png" layout="fill" objectFit="cover" /> */}
         <video loop autoPlay muted>
-          <source src="/Website Vid.mp4" type="video/mp4" />
+          <source src="/LandingVid.mp4" type="video/mp4" />
         </video>
       </div>
       <div className={styles.heroContainer}>
-        {/* <div className={styles.heroImg}>
-          <Image src="/landing image.png" layout="fill" objectFit="cover"/>
-        </div> */}
-        <video
-          ref={videoRef}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className={styles.heroVideo}
-        >
-          <source src="/landingVid.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-      <div className={styles.HeroText}>
-        <p className={styles.heroSub}>Grow and expand your business with</p>
-        <h1 className={styles.heroHeader}>
-          <span className={styles.heroSpan}>KOMOSU</span> NETWORK
-        </h1>
-        <Link href="/about">
-          <button className={styles.headerbtn}>
-            Learn more
-            <div className={styles.buttonImageBg}>
-              <div className={styles.buttonImage}>
-                <Image src="/Vector.png" alt="vector" fill />
-              </div>
-            </div>
-          </button>
-        </Link>
-      </div>
-      <div className={styles.HeaderContent}>
-        <p className={styles.heroSubText}>
-          Our team of experts will help provide long lasting solutions for your
-          business through web design, AI Solutions, and other high quality
-          impressions through content marketing and lead generations.
-        </p>
+        <div className={styles.HeroTextContainer}>
+          <div className={styles.HeroText}>
+            <h1 className={styles.heroHeader}>
+              Transform your{" "}
+              <span className={`${styles.heroSpan} ${shadowFont.className}`}>
+                {" "}
+                dealership{" "}
+              </span>{" "}
+              with Komosu Network
+            </h1>
+            <Link href="/about">
+              <button className={styles.headerbtn}>
+                Learn more
+                <div className={styles.buttonImage}>
+                  <Image src="/View plan button (4).png" alt="vector" fill />
+                </div>
+              </button>
+            </Link>
+          </div>
+          <div className={styles.HeaderContent}>
+            <p className={styles.heroSubText}>
+              Our team of experts will help provide long lasting solutions for
+              your business through web design, AI Solutions, and other high
+              quality impressions through content marketing and lead
+              generations.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
