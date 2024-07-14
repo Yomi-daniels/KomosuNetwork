@@ -1,11 +1,7 @@
 import ContactForm from "../components/contactForm/contactForm";
-import { supabase } from "../lib/supabaseClient";
+import { supabase } from "../components/supabaseClient";
 import styles from "./contact.module.css";
 import { Shadows_Into_Light } from "next/font/google";
-const shadows = Shadows_Into_Light({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 const shadows = Shadows_Into_Light({
   subsets: ["latin"],

@@ -72,7 +72,7 @@
   height: 20px;
 }
 
-.Tickimg {
+.Ticking {
   position: relative;
 }
 
@@ -101,12 +101,11 @@
 }
 
 .demoForm {
-  max-width: 528px;
+  width: 65vw;
   position: relative;
   padding: 40px 24px;
   align-items: center;
   gap: 24px;
-  flex: 1 0 0;
   border-radius: 20px;
   background: #fff;
   box-shadow: 0px 8px 16px 0px rgba(40, 40, 43, 0.2);

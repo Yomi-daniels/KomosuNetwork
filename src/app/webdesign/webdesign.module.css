@@ -377,7 +377,7 @@
   font-family: var(--text-Font-Bold);
 }
 
-.tickImg {
+.ticking {
   position: relative;
   width: 20px;
   height: 20px;

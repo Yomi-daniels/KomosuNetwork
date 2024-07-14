@@ -1,6 +1,6 @@
 "use client";
 
-import { supabase } from "@/app/lib/supabaseClient";
+import { supabase } from "@/app/components/supabaseClient";
 import { useEffect, useState } from "react";
 import styles from "./contactForm.module.css";
 
@@ -234,9 +234,7 @@ const ContactForm = () => {
             <small className={styles.errorText}>{errors.message}</small>
           )}
         </div>
-        <button type="submit" onClick={handleSubmit}>
-          Send message
-        </button>
+        <button type="submit">Send message</button>
       </div>
     </form>
   );
