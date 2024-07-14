@@ -1,24 +1,33 @@
+/* components/navbar.module.css */
+
 .container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1316px;
+  max-width: 1512px;
   height: 100%;
   margin: 0 auto;
   padding: 0 1.2rem;
+  /* border: 3px solid blue; */
 }
 
-.parent {
+.parentContainer {
   background: rgb(255, 255, 255);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  z-index: 1000;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  z-index: 50;
   width: 100vw;
   left: 0;
   top: 0;
   position: fixed;
+  transition: top 0.3s;
+  height: 90px;
+  /* border: 2px solid red; */
+}
+
+.hidden {
+  top: -100px;
 }
 
 .logo {
@@ -30,4 +39,9 @@
   position: relative;
   width: 90px;
   height: 90px;
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
 }

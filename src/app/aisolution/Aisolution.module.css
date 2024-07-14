@@ -9,8 +9,11 @@
 
 .AiLandingPage {
   background-color: var(--hover2);
+  border-bottom: 1px solid #fcf6d9;
+  border-top: 2px solid #fcf6d9;
+  background: linear-gradient(269deg, #fdf9e6 44.62%, #fff 91.54%);
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: end;
   align-items: end;
@@ -19,10 +22,27 @@
   padding: 0 6rem;
 }
 
+.ailandingpageContainerTextContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.ailandingpageContainerTextContent p {
+  color: var(--blueText);
+  font-family: var(--text-Font-Regular);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+}
+
 .vectorImgtop {
   position: absolute;
-  width: 136px;
-  height: 136px;
+  width: 100px;
+  height: 100px;
   top: 0;
   left: 0;
 }

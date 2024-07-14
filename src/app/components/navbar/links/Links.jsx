@@ -28,10 +28,17 @@ const links = [
       },
     ],
   },
+
+  // {
+  //   title: "Pricing",
+  //   path: "/pricing",
+  // },
+
   {
-    title: "Pricing",
-    path: "/pricing",
+    title: "Case Study",
+    path: "/case-study",
   },
+
   {
     title: "Contact",
     path: "/contact",
@@ -56,7 +63,7 @@ const Links = () => {
         {links.map((link) => (
           <div
             key={link.title}
-            className={`${styles.linkItem} ${link.title === "Services" ? styles.customLinkItem : ""}  ${link.title === "Request Demo" ? styles.requestDemoLink : ""}`}
+            className={`${styles.linkItem} ${link.title === "Services" ? styles.customLinkItem : ""}  ${link.title === "Get Demo" ? styles.requestDemoLink : ""}`}
           >
             {link.subLinks ? (
               <>

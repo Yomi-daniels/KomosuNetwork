@@ -5,23 +5,31 @@
 .webdesignLandingPage {
   position: relative;
   width: 100%;
-  min-height: 90vh;
-  background-color: var(--hover1);
+  height: 100%;
+  border: 1px solid#dad9ff;
+  background: linear-gradient(269deg, #e6e6ff 1.83%, #fff 57.69%);
   display: flex;
   justify-content: center;
   align-items: flex-start;
   overflow: hidden;
-  padding: 0 96px;
+  /* padding: 190px 96px; */
 }
 
 .webdesignLandingPageContainer {
-  max-width: 1300px;
-  height: 100%;
+  width: 1216px;
+  position: relative;
+  height: 90vh;
   margin-inline: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 6rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* margin-top: 3rem; */
+}
+
+@media (min-width: 1628px) {
+  .webdesignLandingPageContainer {
+    height: 80vh;
+  }
 }
 
 .headerContent {
@@ -32,19 +40,38 @@
 }
 
 .webdesignTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
   z-index: 66;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0;
+  top: 15%;
+}
+
+.webdesignTextContainer p {
+  color: var(--blueText);
+  font-family: var(--text-Font-Regular);
+  width: 544px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
 }
 
 .webdesignTextContainer h1 {
   margin: 1rem 0;
   color: var(--blueText);
-  font-size: 48px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   /* width: 40%; */
   line-height: 120%; /* 57.6px */
   letter-spacing: -0.48px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .headerimg {
@@ -70,7 +97,7 @@
   display: flex;
   align-items: center;
   gap: 1em;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .buttonContainer .pricingbtn {
@@ -113,8 +140,8 @@
   align-items: flex-start;
   gap: 2em;
   width: 700px;
-  right: 5%;
-  top: 10%;
+  right: -7%;
+  top: 8%;
 }
 
 .pricingBtn button {
@@ -233,12 +260,12 @@
 
 .webdesignTextContent,
 .webdesignTextContent2 {
+  width: 544px;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* align-self: stretch; */
   gap: 1.5em;
-  /* width: 544px; */
   height: fit-content;
 }
 
@@ -267,8 +294,8 @@
 
 .webdesignContents1 {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
 }
 
 .webdesignTextContent h2,
@@ -284,6 +311,18 @@
   font-family: var(--text-Font-Bold);
 }
 
+.webdesignTextContent p,
+.webdesignTextContent2 p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  font-family: var(--text-Font-Regular);
+  color: var(--blueText);
+}
+
 .webdesignImg {
   position: relative;
   width: 562px;
@@ -292,13 +331,13 @@
 
 .webdesignContent2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-.webdesignTextContent2 {
+/* .webdesignTextContent2 {
   width: 50%;
-}
+} */
 
 /* WEB DESIGN PRICING SECTION */
 

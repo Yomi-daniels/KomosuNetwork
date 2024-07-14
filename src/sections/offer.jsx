@@ -82,7 +82,7 @@ const Offer = () => {
                     stunning web design
                   </h1>
                   <Link href="/webdesign">
-                    <button className={styles.WebDesignBtn}>Get Started</button>
+                    <button className={styles.WebDesignBtn}>See More</button>
                   </Link>
                   <div className={styles.WebDesignFeatures}>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -186,7 +186,7 @@ const Offer = () => {
                     sponsored by our AI-powered Chatbot
                   </h1>
                   <Link href="/aisolution">
-                    <button className={styles.WebDesignBtn}>Get Started</button>
+                    <button className={styles.WebDesignBtn}>See More</button>
                   </Link>
                   <div className={styles.WebDesignFeatures}>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -247,21 +247,14 @@ const Offer = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.webDesignCardContainer}>
+                <div
+                  className={`${styles.webDesignCardContainer} ${styles.AisolutionContainer}`}
+                >
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
                   >
                     <Image
-                      src="/New Macbook Pro Mockup Front View.png"
-                      fill
-                      objectFit="contain"
-                    />
-                  </div>
-                  <div
-                    className={`${styles.webDesignCard} ${styles.webDesignCard2}`}
-                  >
-                    <Image
-                      src="/Pixel 8 Pro Mockup Obsidian.png"
+                      src="/Frame 1618868477.png"
                       fill
                       objectFit="contain"
                     />
@@ -297,7 +290,7 @@ const Offer = () => {
                     content
                   </h1>
                   <Link href="/contentmarketing">
-                    <button className={styles.WebDesignBtn}>Get Started</button>
+                    <button className={styles.WebDesignBtn}>See More</button>
                   </Link>
                   <div className={styles.WebDesignFeatures}>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -357,21 +350,14 @@ const Offer = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.webDesignCardContainer}>
+                <div
+                  className={`${styles.webDesignCardContainer} ${styles.contentMarketingContainer}`}
+                >
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
                   >
                     <Image
-                      src="/New Macbook Pro Mockup Front View.png"
-                      fill
-                      objectFit="contain"
-                    />
-                  </div>
-                  <div
-                    className={`${styles.webDesignCard} ${styles.webDesignCard2}`}
-                  >
-                    <Image
-                      src="/Pixel 8 Pro Mockup Obsidian.png"
+                      src="/content marketing girl.png"
                       fill
                       objectFit="contain"
                     />
@@ -407,7 +393,7 @@ const Offer = () => {
                     strategies
                   </h1>
                   <Link href="/leadgeneration">
-                    <button className={styles.WebDesignBtn}>Get Started</button>
+                    <button className={styles.WebDesignBtn}>See More</button>
                   </Link>
                   <div className={styles.WebDesignFeatures}>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -469,22 +455,9 @@ const Offer = () => {
                 </div>
                 <div className={styles.webDesignCardContainer}>
                   <div
-                    className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
+                    className={`${styles.webDesignCard} ${styles.webDesignCard3}`}
                   >
-                    <Image
-                      src="/New Macbook Pro Mockup Front View.png"
-                      fill
-                      objectFit="contain"
-                    />
-                  </div>
-                  <div
-                    className={`${styles.webDesignCard} ${styles.webDesignCard2}`}
-                  >
-                    <Image
-                      src="/Pixel 8 Pro Mockup Obsidian.png"
-                      fill
-                      objectFit="contain"
-                    />
+                    <Image src="/Frame 1618868694.png" fill objectFit="cover" />
                   </div>
                 </div>
               </div>

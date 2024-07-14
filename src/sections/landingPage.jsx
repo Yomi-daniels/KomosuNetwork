@@ -5,15 +5,11 @@ import styles from "./sections.module.css";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Link from "next/link";
-// import { Montserrat } from "next/font/google";
-// const montserratFont = Montserrat({
-//   subsets: ["latin"],
-//   weight: ["900"],
-// });
-// import localFont from 'next/font/local';
-// const satoshiFont = localFont({
-//   src: '/fonts/Satoshi-Regular.otf'
-// });
+import { Shadows_Into_Light } from "next/font/google";
+const shadowFont = Shadows_Into_Light({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 const LandingPage = () => {
   const videoRef = useRef(null);
@@ -55,6 +51,12 @@ const LandingPage = () => {
 
   return (
     <section className={styles.heroSection}>
+      <div className={styles.herobg}>
+        {/* <Image src="/landing image.png" layout="fill" objectFit="cover" /> */}
+        <video loop autoPlay muted>
+          <source src="/Website Vid.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div className={styles.heroContainer}>
         {/* <div className={styles.heroImg}>
           <Image src="/landing image.png" layout="fill" objectFit="cover"/>

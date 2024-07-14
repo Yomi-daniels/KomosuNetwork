@@ -37,55 +37,72 @@
 
 /* .heroContainer {
   position: relative;
-  max-width: 1316px;
+  max-width: 100%;
   height: 100%;
-  margin-inline: auto;
-  border-radius: 36px;
-
+  margin-top: 5rem;
+  margin-bottom: 6rem;
   overflow: hidden;
   padding-left: 64px; 
 } */
 
-.heroImg {
-  position: relative;
-  width: 1316px;
-  object-fit: cover;
-  height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.24) -1.53%,
-    rgba(0, 0, 0, 0.6) 93.64%
-  );
-  backdrop-filter: blur(50px);
-  border-radius: 36px;
+.heroContainer {
+  position: absolute;
+  bottom: 20%;
+  /* border: 3px solid red; */
+  width: 100%;
+  z-index: 10;
 }
 
-.heroImg img {
-  border-radius: inherit;
+.HeroTextContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .HeroText {
-  position: absolute;
-  top: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  left: 0;
   color: var(--text);
-  padding-left: 7rem;
-  margin-left: 148px;
-  width: 1120px;
+  margin-left: 6rem;
+  max-width: 614px;
 }
 
-.heroSub {
-  color: var(--text);
-  font-size: 1rem;
-  font-weight: light;
-  text-transform: uppercase;
+.HeaderContent {
+  color: #fff;
+  /* z-index: 100; */
+  max-width: 480px;
+  margin-right: 6rem;
 }
 
-.heroImg::before {
+.heroSubText {
+  color: var(--White, #fff);
+  text-align: right;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  text-align: right;
+}
+
+/* .heroImg {
+  position: relative;
+  width: 800px;
+  object-fit: cover;
+  height: 100vh;
+} */
+.herobg {
+  /* border: 3px solid red; */
+  width: 100%;
+  height: 750px;
+  position: relative;
+  /* z-index: 99; */
+}
+
+.herobg::before {
   content: "";
   position: absolute;
   top: 0;
@@ -100,11 +117,13 @@
   z-index: 1;
 }
 
-.heroImg img {
-  object-fit: cover;
-  object-position: 20% 20%;
-  z-index: 0;
+.heroSub {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: light;
+  text-transform: uppercase;
 }
+
 .headerbtn {
   /* opacity: 0; */
   color: var(--text);
@@ -113,11 +132,15 @@
   padding: 0.9rem 1.3rem;
   color: var(--btn);
   display: flex;
+  height: 50px;
+  padding: 8px 12px;
+  justify-content: center;
   align-items: center;
+  gap: 8px;
   justify-content: space-between;
-  gap: 1em;
+  font-family: var(--text-Font-Bold);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 1rem;
   border: none;
   cursor: pointer;
@@ -145,44 +168,27 @@
 
 .heroHeader {
   color: var(--text);
-  font-size: 64px;
+  font-size: 50px;
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.28px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.36px;
   font-family: var(--text-Font-Black);
 }
 
 .heroSpan {
-  color: var(--btn);
-}
-
-.HeaderContent {
-  position: absolute;
-  bottom: 3%;
-  left: 0;
-  margin-left: 148px;
-  color: #fff;
-  padding: 0 7rem;
-  z-index: 100;
-}
-
-.heroSubText {
-  width: 40%;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 27px */
-  letter-spacing: 0.18px;
-  text-transform: capitalize;
+  color: var(--yellow);
 }
 
 @media (min-width: 1628px) {
+  .herobg {
+    height: 100vh;
+  }
   .HeroText {
-    left: 15%;
+    margin-left: 12rem;
   }
   .HeaderContent {
-    left: 15%;
+    margin-right: 12rem;
   }
 }
 
@@ -639,7 +645,7 @@
 
 .OfferSection {
   max-width: 1250px;
-  min-height: 100vh;
+  height: 100%;
   position: relative;
   margin-inline: auto;
   margin-top: 6rem;
@@ -700,6 +706,7 @@
   color: var(--blueText);
   padding: 1rem;
   border-radius: 36px;
+  font-family: var(--text-Font-Bold);
 }
 
 .webDesignContainer {
@@ -730,6 +737,17 @@
   align-items: center;
 }
 
+.AisolutionContainer .webDesignCard {
+  width: 435px;
+  height: 549px;
+  flex-shrink: 0;
+}
+
+.contentMarketingContainer .webDesignCard {
+  width: 693px;
+  height: 563.915px;
+}
+
 .webDesignCard {
   width: 485.237px;
   height: 272.976px;
@@ -755,6 +773,15 @@
   width: 200.438px;
   height: 330.293px;
   top: 60%;
+}
+
+.webDesignCard3 {
+  width: 693px;
+  height: 563.915px;
+  position: relative;
+  margin-right: 40px;
+  /* scale: 1; */
+  /* border: 3px solid red; */
 }
 
 .webDesignCardContainer1 .webDesignCard2::after {
@@ -919,6 +946,10 @@
   transition:
     opacity 0.3s ease-in-out,
     visibility 0.3s ease-in-out;
+}
+
+.leadGeneration {
+  gap: 3em;
 }
 
 .webDesignContainer.active,
@@ -1305,7 +1336,7 @@
 .FAQSection {
   margin-top: 6rem;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   position: relative;
 }
 .servicesSubTextContainer {
@@ -1525,4 +1556,22 @@
 
 .testimonialContainer.fade {
   opacity: 0;
+}
+/* 
+.section {
+  height: 100vh;
+  padding: 2rem;
+} */
+
+.landingPage {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ServicesPage,
+.VideoShowcasePage,
+.OfferPage,
+.OfferAnimationPage,
+.TestimonialPage,
+.FAQPage {
+  background-color: white;
 }

@@ -1,16 +1,18 @@
 .FooterSection {
   max-width: 100%;
-  min-height: 90vh;
+  height: 100%;
   position: relative;
+  margin-top: 6rem;
+  background-color: var(--blueText);
 }
 
 .FooterContainer {
   max-width: 1316px;
-  height: 603px;
+  height: 100%;
   margin-inline: auto;
-  background-color: var(--blueText);
+
   border-radius: 36px;
-  padding: 3rem 2.8rem;
+  padding: 6rem 2.8rem;
   position: relative;
   color: white;
   font-size: 18px;
@@ -27,7 +29,11 @@
 
 .footerHeader {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0;
+  background: #020073;
+  color: #fff;
 }
 
 .footerHeader h1 {
@@ -42,8 +48,6 @@
 
 .buttonImage {
   position: relative;
-  width: 20px;
-  height: 20px;
 }
 .footerBtn {
   display: flex;
@@ -69,7 +73,6 @@
 .footerBtn .footerbtn2 {
   display: flex;
   height: 55px;
-  width: 180px;
   padding: 8px 12px;
   justify-content: center;
   align-items: center;
@@ -94,8 +97,8 @@
 }
 
 .buttonImage {
-  width: 7.5px;
-  height: 10px;
+  width: 24px;
+  height: 24px;
 }
 
 .footerLinks,
