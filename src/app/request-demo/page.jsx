@@ -2,7 +2,7 @@
 import styles from "./request-demo.module.css";
 import Image from "next/image";
 import { Shadows_Into_Light, Montserrat } from "next/font/google";
-import Ticking from "../webdesign/components/Ticking";
+import TickImg from "../webdesign/components/TickImg";
 import DemoForm from "../components/demoForm/demoForm";
 
 const montserrat = Montserrat({
@@ -44,8 +44,8 @@ const RequestDemoPages = () => {
                 "Secure and efficient online booking and purchasing systems.",
               ].map((feature, index) => (
                 <div className={styles.demoFeatures} key={index}>
-                  <div className={styles.Ticking}>
-                    <Ticking />
+                  <div className={styles.TickImg}>
+                    <TickImg />
                   </div>
                   <p>{feature}</p>
                 </div>

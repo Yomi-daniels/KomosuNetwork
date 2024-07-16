@@ -74,7 +74,6 @@ const ContactPage = () => {
         </div>
       </div>
       <div className={styles.contactForm}>
-        <h1>Contact Form</h1>
         <ContactForm />
       </div>
     </section>

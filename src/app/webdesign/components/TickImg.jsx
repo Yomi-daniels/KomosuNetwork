@@ -1,7 +1,7 @@
 import styles from "@/sections/sections.module.css";
 import Image from "next/image";
 
-const Ticking = () => {
+const TickImg = () => {
   return (
     <div className={styles.offerFeaturesImgShadow}>
       <div className={styles.offerFeaturesImg}>
@@ -11,4 +11,4 @@ const Ticking = () => {
   );
 };
 
-export default Ticking;
+export default TickImg;

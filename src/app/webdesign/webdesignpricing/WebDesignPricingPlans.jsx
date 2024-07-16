@@ -38,7 +38,7 @@ const WebDesignPricingPlans = () => {
             <div className={webstyle.webbasicplanfeatures}>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -46,7 +46,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -54,7 +54,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -62,7 +62,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -70,7 +70,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -78,7 +78,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -102,7 +102,7 @@ const WebDesignPricingPlans = () => {
             <div className={webstyle.webbasicplanfeatures}>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -110,7 +110,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -118,7 +118,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -126,7 +126,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -134,7 +134,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -142,7 +142,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -150,7 +150,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -158,7 +158,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -169,7 +169,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -177,7 +177,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -185,7 +185,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -193,7 +193,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -220,7 +220,7 @@ const WebDesignPricingPlans = () => {
             <div className={webstyle.webbasicplanfeatures}>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -228,7 +228,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -236,7 +236,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -244,7 +244,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -252,7 +252,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -260,7 +260,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -268,7 +268,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -276,7 +276,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
@@ -284,7 +284,7 @@ const WebDesignPricingPlans = () => {
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.ticking}>
+                  <div className={webstyle.TickImg}>
                     <Image src="/Vector (6).png" fill />
                   </div>
                 </div>
