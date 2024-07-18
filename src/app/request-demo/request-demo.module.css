@@ -10,8 +10,8 @@
   margin: 5rem auto;
   display: flex;
   align-items: flex-start;
-  gap: 4em;
   justify-content: center;
+  gap: 7rem;
 }
 
 .requestDemoTextcontainer {
@@ -101,7 +101,7 @@
 }
 
 .demoForm {
-  width: 65vw;
+  width: 100%;
   position: relative;
   padding: 40px 24px;
   align-items: center;

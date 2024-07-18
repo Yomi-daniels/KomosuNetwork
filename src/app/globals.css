@@ -75,6 +75,14 @@ button {
   cursor: pointer;
 }
 
+textarea {
+  font-family: var(--text-Font-Light);
+  letter-spacing: 0.125ch;
+}
+
+textarea:focus {
+  border-color: #007bff;
+}
 /* 
 .container {
   background-color: var(--bg);

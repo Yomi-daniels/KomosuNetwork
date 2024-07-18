@@ -40,8 +40,8 @@ const links = [
   },
 
   {
-    title: "Contact",
-    path: "/contact",
+    title: "Contact Us",
+    path: "/contact-us",
   },
   {
     title: "Get Demo",

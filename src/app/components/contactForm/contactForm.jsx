@@ -1,242 +1,113 @@
 "use client";
 
-import { supabase } from "@/app/components/supabaseClient";
-import { useEffect, useState } from "react";
 import styles from "./contactForm.module.css";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { schema } from "./validationSchema";
+import { useState } from "react";
+import { supabase } from "../../../lib/supabaseClient";
+import InputField from "../fields/InputField";
 
 const ContactForm = () => {
-  const [formState, setFormState] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phoneNumber: "",
-    message: "",
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submissionStatus, setSubmissionStatus] = useState(null);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm({
+    resolver: zodResolver(schema),
   });
 
-  const [errors, setErrors] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phoneNumber: "",
-    message: "",
-  });
+  const onSubmit = async (formData) => {
+    console.log("click");
+    setIsSubmitting(true);
+    try {
+      console.log("Form Data: ", formData);
+      const { firstName, lastName, workEmail, message, phoneNumber } = formData;
 
-  const handleChange = (e) => {
-    setFormState({
-      ...formState,
-      [e.target.name]: e.target.value,
-    });
+      const { data, error } = await supabase.from("contact_form").insert([
+        {
+          phone_number: phoneNumber,
+          first_name: firstName,
+          last_name: lastName,
+          email: workEmail,
+          message: message,
+        },
+      ]);
 
-    // Validate field on change
-    switch (e.target.name) {
-      case "firstName":
-        validateFirstName(e.target.value);
-        break;
-      case "lastName":
-        validateLastName(e.target.value);
-        break;
-      case "email":
-        validateEmail(e.target.value);
-        break;
-      case "phoneNumber":
-        validatePhoneNumber(e.target.value);
-        break;
-      case "message":
-        validateMessage(e.target.value);
-        break;
-      default:
-        break;
+      if (error) throw error;
+      console.log("Data inserted successfully: ", data);
+      reset();
+      setSubmissionStatus("success");
+    } catch (error) {
+      console.error("Error inserting data into table: ", error);
+      setSubmissionStatus("error");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
-  const validateFirstName = (firstName) => {
-    if (!firstName) {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        firstName: "First name is required.",
-      }));
-    } else {
-      setErrors((prevErrors) => ({ ...prevErrors, firstName: "" }));
-    }
-  };
-
-  const validateLastName = (lastName) => {
-    if (!lastName) {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        lastName: "Last name is required.",
-      }));
-    } else {
-      setErrors((prevErrors) => ({ ...prevErrors, lastName: "" }));
-    }
-  };
-
-  const validateEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!email) {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        email: "Email is required.",
-      }));
-    } else if (!emailRegex.test(email)) {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        email: "Please enter a valid email address.",
-      }));
-    } else {
-      setErrors((prevErrors) => ({ ...prevErrors, email: "" }));
-    }
-  };
-
-  const validatePhoneNumber = (phoneNumber) => {
-    const phoneRegex = /^[0-9]{10,15}$/; // Adjust regex as per your requirements
-    if (!phoneNumber) {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        phoneNumber: "Phone number is required.",
-      }));
-    } else if (!phoneRegex.test(phoneNumber)) {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        phoneNumber: "Please enter a valid phone number.",
-      }));
-    } else {
-      setErrors((prevErrors) => ({ ...prevErrors, phoneNumber: "" }));
-    }
-  };
-
-  const validateMessage = (message) => {
-    if (!message) {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        message: "Message is required.",
-      }));
-    } else {
-      setErrors((prevErrors) => ({ ...prevErrors, message: "" }));
-    }
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const { firstName, lastName, email, phoneNumber, message } = formState;
-
-    // Validate all fields before submitting
-    validateFirstName(firstName);
-    validateLastName(lastName);
-    validateEmail(email);
-    validatePhoneNumber(phoneNumber);
-    validateMessage(message);
-
-    if (Object.values(errors).some((error) => error)) {
-      console.error(
-        "Form is not valid. Please fill all required fields correctly."
-      );
-      return;
-    }
-
-    // Insert data into the Supabase database
-    const { data, error } = await supabase.from("contact_form").insert([
-      {
-        first_name: firstName,
-        last_name: lastName,
-        email: email,
-        phone_number: phoneNumber,
-        message: message,
-      },
-    ]);
-
-    if (error) {
-      console.error("Error inserting data into table:", error);
-    } else {
-      console.log("Data inserted successfully");
-
-      // Reset form state
-    }
-  };
-  // useEffect(() => {
-  //   setErrors({
-  //     firstName: "",
-  //     lastName: "",
-  //     email: "",
-  //     phoneNumber: "",
-  //     message: "",
-  //   });
-  // }, [formState]);
   return (
-    <form className={styles.form}>
-      <div className={styles.fullname}>
-        <div className={styles.inputContainer}>
-          <input
-            type="text"
+    <div>
+      <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+        <div className={styles.fullname}>
+          <InputField
+            label="First Name *"
             name="firstName"
-            placeholder="First name"
-            value={formState.firstName}
-            onChange={handleChange}
-            required
+            register={register}
+            errors={errors}
+            placeholder="First Name"
           />
-          {errors.firstName && (
-            <small className={styles.errorText}>{errors.firstName}</small>
-          )}
-        </div>
-        <div className={styles.inputContainer}>
-          <input
-            type="text"
+          <InputField
+            label="Last Name *"
             name="lastName"
-            placeholder="Last name"
-            value={formState.lastName}
-            onChange={handleChange}
-            required
+            register={register}
+            errors={errors}
+            placeholder="Last Name"
           />
-          {errors.lastName && formState.lastName !== "" && (
-            <small className={styles.errorText}>{errors.lastName}</small>
-          )}
         </div>
-      </div>
-      <div className={styles.inputs}>
+        <InputField
+          label="Email"
+          name="workEmail"
+          register={register}
+          errors={errors}
+          placeholder="Work Email"
+          type="email"
+        />
+        <InputField
+          label="Phone Number *"
+          name="phoneNumber"
+          register={register}
+          errors={errors}
+          placeholder="Phone Number"
+          type="tel"
+        />
         <div className={styles.inputContainer}>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formState.email}
-            onChange={handleChange}
-            required
-          />
-          {errors.email && (
-            <small className={styles.errorText}>{errors.email}</small>
-          )}
-        </div>
-        <div className={styles.inputContainer}>
-          <input
-            type="tel"
-            name="phoneNumber"
-            placeholder="Phone number"
-            value={formState.phoneNumber}
-            onChange={handleChange}
-            required
-          />
-          {errors.phoneNumber && (
-            <small className={styles.errorText}>{errors.phoneNumber}</small>
-          )}
-        </div>
-        <div className={styles.inputContainer}>
+          <label htmlFor="message">Message *</label>
           <textarea
             name="message"
             cols="30"
             rows="10"
-            placeholder="Ask your question"
-            value={formState.message}
-            className={styles.textarea}
-            onChange={handleChange}
-            required
+            placeholder="Ask Your Question"
+            className={`${styles.textarea} ${errors.message ? styles.errorInput : ""}`}
+            {...register("message")}
           ></textarea>
           {errors.message && (
-            <small className={styles.errorText}>{errors.message}</small>
+            <p className={styles.errorText}>{errors.message.message}</p>
           )}
         </div>
-        <button type="submit">Send message</button>
-      </div>
-    </form>
+        <button type="submit" disabled={isSubmitting}>
+          {isSubmitting ? "Sending..." : "Send message"}
+        </button>
+      </form>
+      {submissionStatus === "success" && <p>Form submitted successfully!</p>}
+      {submissionStatus === "error" && (
+        <p>There was an error submitting the form.</p>
+      )}
+    </div>
   );
 };
 

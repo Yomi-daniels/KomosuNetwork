@@ -1,7 +1,8 @@
 "use client";
 import leadStyles from "../leadgeneration.module.css";
 import Image from "next/image";
-import LandingPageButtons from "@/app/webdesign/components/LandingPageButtons";
+// import LandingPageButtons from "@/app/webdesign/components/LandingPageButtons";
+import LandingPageButtons from "../../../app/webdesign/components/LandingPageButtons";
 import { Montserrat } from "next/font/google";
 import { ScrollParallax } from "react-just-parallax";
 

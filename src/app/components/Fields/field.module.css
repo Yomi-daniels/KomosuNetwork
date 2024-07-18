@@ -1,6 +1,10 @@
 .formGroup {
   width: 100%;
+  display: flex;
+  gap: 0.4em;
+  flex-direction: column;
 }
+
 .formGroup input {
   color: var(--blueText);
   display: flex;
@@ -23,16 +27,19 @@
 }
 
 .formGroup select {
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
   width: 100%;
-  height: 40px;
-  align-items: center;
-  text-align: center;
-  gap: 8px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
 }
 
+.formGroup select:focus,
+.formGroup input:focus {
+  border-color: #007bff;
+  outline: none;
+}
 .formGroup select option:last-child {
   display: flex;
 }

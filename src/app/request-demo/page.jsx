@@ -54,7 +54,7 @@ const RequestDemoPages = () => {
           </div>
         </div>
         <div className={styles.demoForm}>
-          <DemoForm plans={plans} />
+          <DemoForm />
         </div>
       </div>
     </section>

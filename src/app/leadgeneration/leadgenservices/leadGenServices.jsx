@@ -1,10 +1,13 @@
 "use client";
 import leadStyles from "../leadgeneration.module.css";
 import Image from "next/image";
-import GetStarted from "@/app/webdesign/components/GetStarted";
-import Testimonials from "@/sections/testimonials";
+// import GetStarted from "@/app/webdesign/components/GetStarted";
+import GetStarted from "../../../app/webdesign/components/GetStarted";
+// import Testimonials from "@/sections/testimonials";
+import Testimonials from "../../../sections/testimonials";
 import { ScrollParallax } from "react-just-parallax";
-import FAQ from "@/sections/faq";
+// import FAQ from "@/sections/faq";
+import FAQ from "../../../sections/faq";
 import Link from "next/link";
 const leadGenServices = () => {
   return (

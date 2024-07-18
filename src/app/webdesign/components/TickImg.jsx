@@ -1,4 +1,4 @@
-import styles from "@/sections/sections.module.css";
+import styles from "../../../sections/sections.module.css";
 import Image from "next/image";
 
 const TickImg = () => {
