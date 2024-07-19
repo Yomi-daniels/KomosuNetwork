@@ -1,13 +1,13 @@
 "use client";
 import Navbar from "../components/navbar/Navbar";
-import AboutUsLandingPage from "./aboutSections/aboutUsLandingPage";
-import WhoareweSection from "./whoareWeSection/whoarewe";
+import AboutUsLandingPage from "./aboutSections/aboutUsLandingPage.tsx";
+import WhoareweSection from "./whoareWeSection/whoarewe.tsx";
 import aboutstyles from "./aboutSection.module.css";
-import OurvisionSection from "./ourVisionSection/ourvision";
-import VideoShowcase from "../../sections/videoShowcase";
-import OurSolutionSection from "./ourSolutionSection/ourSolution";
-import ServicesFlex from "../../sections/servicesflex";
-import MeetOurTeam from "./meetOurTeamSection/meetOurTeam";
+import OurvisionSection from "./ourVisionSection/ourvision.tsx";
+import VideoShowcase from "../../sections/videoShowcase.tsx";
+import OurSolutionSection from "./ourSolutionSection/ourSolution.tsx";
+import ServicesFlex from "../../sections/servicesflex.tsx";
+import MeetOurTeam from "./meetOurTeamSection/meetOurTeam.tsx";
 
 const AboutPage = () => {
   return (
