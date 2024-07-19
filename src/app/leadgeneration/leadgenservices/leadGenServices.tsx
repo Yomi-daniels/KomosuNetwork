@@ -1,15 +1,13 @@
 "use client";
 import leadStyles from "../leadgeneration.module.css";
 import Image from "next/image";
-// import GetStarted from "@/app/webdesign/components/GetStarted";
-import GetStarted from "../../../app/webdesign/components/GetStarted";
-// import Testimonials from "@/sections/testimonials";
+import GetStarted from "../../webdesign/components/GetStarted";
 import Testimonials from "../../../sections/testimonials";
-import { ScrollParallax } from "react-just-parallax";
-// import FAQ from "@/sections/faq";
 import FAQ from "../../../sections/faq";
+import { ScrollParallax } from "react-just-parallax";
 import Link from "next/link";
-const leadGenServices = () => {
+
+const LeadGenServices: React.FC = () => {
   return (
     <section className={leadStyles.leadServicesSection}>
       <div className={leadStyles.leadGenServicesContainer}>
@@ -24,15 +22,30 @@ const leadGenServices = () => {
           <div className={leadStyles.leadGenServicesContentImage}>
             <div className={leadStyles.leadImageWrapper}>
               <div className={leadStyles.leadImgabsolute}>
-                <Image src="/Stat (4).png" fill objectFit="contain" />
+                <Image
+                  src="/Stat (4).png"
+                  layout="fill"
+                  objectFit="contain"
+                  alt="Stat 4"
+                />
               </div>
 
               <div className={leadStyles.leadservicesImg}>
-                <Image src="/Rectangle 63 (2).png" fill objectFit="contain" />
+                <Image
+                  src="/Rectangle 63 (2).png"
+                  layout="fill"
+                  objectFit="contain"
+                  alt="Rectangle 63"
+                />
               </div>
               <ScrollParallax isAbsolutelyPositioned shouldPause>
                 <div className={leadStyles.leadImgabsolutebottom}>
-                  <Image src="/Frame 24.png" fill objectFit="contain" />
+                  <Image
+                    src="/Frame 24.png"
+                    layout="fill"
+                    objectFit="contain"
+                    alt="Frame 24"
+                  />
                 </div>
               </ScrollParallax>
             </div>
@@ -41,7 +54,12 @@ const leadGenServices = () => {
         <div className={leadStyles.leadGenServicesContent}>
           <div className={leadStyles.leadGenServicesContentImage}>
             <div className={leadStyles.leadservicesImg}>
-              <Image src="/Frame 1618868497.png" fill objectFit="contain" />
+              <Image
+                src="/Frame 1618868497.png"
+                layout="fill"
+                objectFit="contain"
+                alt="Frame 1618868497"
+              />
             </div>
           </div>
           <div className={leadStyles.leadGenServicesContentText}>
@@ -53,16 +71,16 @@ const leadGenServices = () => {
       <section className={leadStyles.servicesContactSection}>
         <div className={leadStyles.servicesContactContainer}>
           <div className={leadStyles.servicesContactImgtop}>
-            <Image src="/Group 6327.svg" fill />
+            <Image src="/Group 6327.svg" layout="fill" alt="Group 6327" />
           </div>
           <h2>
             Transform Your Sales with Our Proven Lead Generation Solutions
           </h2>
-          <Link href="/contact">
+          <Link href="/contact" passHref>
             <button>Contact us</button>
           </Link>
           <div className={leadStyles.servicesContactImgbottom}>
-            <Image src="/Group 2.png" fill />
+            <Image src="/Group 2.png" layout="fill" alt="Group 2" />
           </div>
         </div>
       </section>
@@ -72,4 +90,4 @@ const leadGenServices = () => {
   );
 };
 
-export default leadGenServices;
+export default LeadGenServices;

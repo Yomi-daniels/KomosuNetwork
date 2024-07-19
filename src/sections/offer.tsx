@@ -92,7 +92,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Tailored website designs that reflect your brand's
+                        Tailored website designs that reflect your brands
                         identity and values.
                       </p>
                     </div>
@@ -149,6 +149,7 @@ const Offer = () => {
                       src="/New Macbook Pro Mockup Front View.png"
                       fill
                       objectFit="contain"
+                      alt="image"
                     />
                   </div>
                   <div
@@ -158,6 +159,7 @@ const Offer = () => {
                       src="/Pixel 8 Pro Mockup Obsidian.png"
                       fill
                       objectFit="contain"
+                      alt="image"
                     />
                   </div>
                 </div>
@@ -257,6 +259,7 @@ const Offer = () => {
                       src="/Frame 1618868477.png"
                       fill
                       objectFit="contain"
+                      alt="image"
                     />
                   </div>
                 </div>
@@ -360,6 +363,7 @@ const Offer = () => {
                       src="/content marketing girl.png"
                       fill
                       objectFit="contain"
+                      alt="image"
                     />
                   </div>
                 </div>
@@ -457,7 +461,12 @@ const Offer = () => {
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard3}`}
                   >
-                    <Image src="/Frame 1618868694.png" fill objectFit="cover" />
+                    <Image
+                      src="/Frame 1618868694.png"
+                      fill
+                      alt="image"
+                      objectFit="cover"
+                    />
                   </div>
                 </div>
               </div>

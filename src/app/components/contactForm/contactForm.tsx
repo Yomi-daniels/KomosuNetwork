@@ -89,13 +89,16 @@ const ContactForm = () => {
           <label htmlFor="message">Message *</label>
           <textarea
             name="message"
-            cols="30"
-            rows="10"
+            cols={30}
+            rows={10}
+            register={register}
+            errors={errors}
             placeholder="Ask Your Question"
             className={`${styles.textarea} ${errors.message ? styles.errorInput : ""}`}
             {...register("message")}
           ></textarea>
           {errors.message && (
+            //@ts-ignore
             <p className={styles.errorText}>{errors.message.message}</p>
           )}
         </div>

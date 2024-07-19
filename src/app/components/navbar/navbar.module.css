@@ -14,8 +14,6 @@
 
 .parentContainer {
   background: rgb(255, 255, 255);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   z-index: 50;
   width: 100vw;
   left: 0;

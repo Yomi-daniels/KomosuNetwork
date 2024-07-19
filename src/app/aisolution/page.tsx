@@ -1,7 +1,7 @@
 import Aistyles from "./Aisolution.module.css";
-import AiLandingpage from "./aisolutionlandingpage/AiLandingpage.tsx";
-import AisolutionServices from "./aisolutionservices/AisolutionServices.tsx";
-import Aipricing from "./aisolutionpricing/Aipricing.tsx";
+import AiLandingpage from "./aisolutionlandingpage/AiLandingpage";
+import AisolutionServices from "./aisolutionservices/AisolutionServices";
+import Aipricing from "./aisolutionpricing/Aipricing";
 
 const Aisolution = () => {
   return (
